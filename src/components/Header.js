@@ -6,20 +6,18 @@ import Logo from '@/assets/Logo.jpg';
 const Header = () => {
   return (
     <header className='w-full'>
-      <nav className='bg-[#36454f] w-full flex laptop:justify-between laptop:items-center laptop:py-9 laptop:px-14'>
-        <div className='flex laptop:gap-7 laptop:items-center'>
+      <nav className='bg-[#36454f] w-full flex phone:justify-between laptop:items-center laptop:py-6 laptop:px-10 phone:py-6 phone:px-3'>
+        <div className='flex items-center laptop:gap-5 phone:w-full'>
           <Image
             alt='TelleNet Logo'
             src={Logo}
-            width={50}
-            height={50}
-            className='rounded-full laptop:ml-4'
+            className='rounded-full laptop:ml-2 laptop:w-[50px] phone:w-[40px]'
           />
-          <h1 className='font-black tracking-wider laptop:text-3xl'>
+          <h1 className='font-black tracking-wider laptop:inline laptop:mx-0 laptop:text-xl phone:mx-auto phone:text-lg'>
             TelleNet
           </h1>
         </div>
-        <ul className='font-bold laptop:flex laptop:text-2xl laptop:gap-16'>
+        <ul className='font-bold laptop:flex laptop:text-lg laptop:gap-12 phone:hidden'>
           <li>
             <Link href='/'>About</Link>
           </li>
@@ -30,6 +28,13 @@ const Header = () => {
             <Link href='/'>Contact</Link>
           </li>
         </ul>
+        <button className='laptop:hidden phone:inline'>
+          <div class='p-[10px] space-y-[5px] bg-gray-600 rounded shadow'>
+            <span class='block w-6 h-0.5 bg-gray-100 animate-pulse'></span>
+            <span class='block w-6 h-0.5 bg-gray-100 animate-pulse'></span>
+            <span class='block w-6 h-0.5 bg-gray-100 animate-pulse'></span>
+          </div>
+        </button>
       </nav>
     </header>
   );
