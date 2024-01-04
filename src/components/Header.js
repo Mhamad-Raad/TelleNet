@@ -5,22 +5,33 @@ import Logo from '@/assets/Logo.jpg';
 
 const Header = () => {
   return (
-    <nav className='w-full'>
-      <div className='desktop:w-full desktop: flex'>
-        <div className='desktop:flex'>
-          <Image alt='TelleNet Logo' src={Logo} width={20} height={20} />
-          <h1>TelleNet</h1>
+    <header className='w-full'>
+      <nav className='bg-[#36454f] w-full flex desktop:justify-between desktop:items-center desktop:py-9 desktop:px-14'>
+        <div className='desktop:flex desktop:gap-9 desktop:items-center'>
+          <Image
+            alt='TelleNet Logo'
+            src={Logo}
+            width={50}
+            height={50}
+            className='rounded-full desktop:ml-10'
+          />
+          <h1 className='font-black tracking-widest desktop:text-3xl'>
+            TelleNet
+          </h1>
         </div>
-        <ul className='desktop:flex'>
+        <ul className='font-bold desktop:flex desktop:text-2xl desktop:gap-16'>
           <li>
-            <Link href='/'>Home</Link>
+            <Link href='/'>About</Link>
           </li>
           <li>
-            <Link href='/about'>About</Link>
+            <Link href='/'>Services</Link>
+          </li>
+          <li>
+            <Link href='/'>Contact</Link>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </header>
   );
 };
 
