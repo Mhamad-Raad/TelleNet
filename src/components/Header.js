@@ -1,11 +1,33 @@
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useScroll, useMotionValueEvent } from 'framer-motion';
 
 import Logo from '@/assets/Logo.jpg';
 
 const Header = () => {
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, 'change', (latest) => {
+    console.log('Page scroll: ', latest);
+  });
+
   return (
     <header className='w-full'>
+      <div className='w-full h-[100px] flex justify-between items-center bg-slate-50'>
+        <p></p>
+        <ul className='font-bold text-black phone:flex phone:gap-12 phone:text-lg phone:px-3'>
+          <li>
+            <Link href='/'>About</Link>
+          </li>
+          <li>
+            <Link href='/'>Services</Link>
+          </li>
+          <li>
+            <Link href='/'>Contact</Link>
+          </li>
+        </ul>
+      </div>
       <nav className='bg-[#36454f] w-full flex phone:justify-between laptop:items-center laptop:py-6 laptop:px-10 phone:py-6 phone:px-3'>
         <div className='flex items-center laptop:gap-5 phone:w-full'>
           <Image
