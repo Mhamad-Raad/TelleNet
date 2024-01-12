@@ -34,14 +34,14 @@ const Header = () => {
       <nav
         className={`${backgroundColor} w-full fixed z-10 flex ease-out duration-100 phone:justify-between laptop:items-center laptop:py-6 laptop:px-10 phone:py-6 phone:px-3`}
       >
-        <div className='flex items-center laptop:gap-5 phone:w-full'>
+        <div className='flex items-center laptop:gap-3 phone:w-full'>
           <Image
             alt='TelleNet Logo'
             src={Logo}
             className='rounded-full laptop:ml-2 laptop:w-[50px] phone:w-[40px]'
           />
           <h1 className='font-black tracking-wider laptop:inline laptop:mx-0 laptop:text-xl phone:mx-auto phone:text-lg'>
-            TelleNet
+            TelleNet <sub>Pro</sub>
           </h1>
         </div>
         <ul className='font-bold laptop:flex laptop:text-lg laptop:gap-12 phone:hidden'>
