@@ -70,7 +70,6 @@ const Hero = () => {
           </motion.h2>
         </div>
       </div>
-      {/* write me a button with an animation of pointing down */}
       <motion.button
         initial={{
           opacity: 0,
