@@ -5,8 +5,8 @@ import Logo from '@/assets/Logo.png';
 
 const Footer = () => {
   return (
-    <footer className='flex flex-col gap-[10px]'>
-      <div className='h-[2px] w-full bg-gradient-to-r from-[#ffffff29] via-white to-[#ffffff29] mb-[10px]' />
+    <footer className='flex flex-col gap-[10px] bg-bgColor'>
+      <div className='h-[2px] w-full bg-gradient-to-r from-[#ffffff29] via-bgSecondary to-[#ffffff29] mb-[10px]' />
       <div className='flex justify-between items-ceneter py-[40px] px-[16px] flex-wrap gap-[50px]'>
         <div className='flex justify-center items-center gap-[20px]'>
           <Image
@@ -51,13 +51,13 @@ const Footer = () => {
         </div>
       </div>
       <div className='flex items-center gap-x-[50px]'>
-        <div className='h-[2px] w-full bg-gradient-to-r from-[#ffffff29] via-white to-[#ffffff29]' />
-          <Image
-            alt='TelleNet Logo'
-            src={Logo}
-            className='rounded-full w-[65px]'
-          />
-        <div className='h-[2px] w-full bg-gradient-to-r from-[#ffffff29] via-white to-[#ffffff29]' />
+        <div className='h-[2px] w-full bg-gradient-to-r from-[#ffffff29] via-bgSecondary to-[#ffffff29]' />
+        <Image
+          alt='TelleNet Logo'
+          src={Logo}
+          className='rounded-full w-[65px]'
+        />
+        <div className='h-[2px] w-full bg-gradient-to-r from-[#ffffff29] via-bgSecondary to-[#ffffff29]' />
       </div>
       <p className='text-center p-10 text-[20px]'>
         {/* write a copywrite */}
