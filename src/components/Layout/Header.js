@@ -55,17 +55,17 @@ const Header = () => {
           </li>
         </ul>
         <button className='laptop:hidden phone:inline' onClick={toggleNavbar}>
-          <div className='p-[10px] space-y-[5px] border-[1px] border-gray-600 rounded shadow'>
-            <span className='block w-6 h-0.5 bg-gray-100 animate-pulse'></span>
-            <span className='block w-6 h-0.5 bg-gray-100 animate-pulse'></span>
-            <span className='block w-6 h-0.5 bg-gray-100 animate-pulse'></span>
+          <div className='p-[10px] space-y-[5px] border-[1px] border-textColor rounded shadow'>
+            <span className='block w-6 h-0.5 bg-textColor animate-pulse'></span>
+            <span className='block w-6 h-0.5 bg-textColor animate-pulse'></span>
+            <span className='block w-6 h-0.5 bg-textColor animate-pulse'></span>
           </div>
         </button>
       </nav>
       <AnimatePresence>
         {showNavbar && (
           <motion.ul
-            className='w-full font-bold flex flex-col gap-y-2 bg-[#435663] fixed top-[85px] py-8'
+            className='w-full z-10 font-bold flex flex-col gap-y-2 bg-bgSecondary fixed top-[85px] py-8'
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -50 }}
