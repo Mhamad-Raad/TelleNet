@@ -21,7 +21,6 @@ const Header = () => {
   };
 
   useMotionValueEvent(scrollY, 'change', (latest) => {
-    console.log('Page scroll: ', latest);
     if (latest >= 100 && backgroundColor !== 'bg-[#36454f]') {
       setBackgroundColor('bg-[#36454f]');
     } else if (latest < 100 && backgroundColor !== '') {
