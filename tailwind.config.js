@@ -19,7 +19,12 @@ module.exports = {
       laptop: '1024px',
       computer: '1440px',
     },
+    colors: {
+      bgColor: '#0d1115',
+      bgSecondary: '#102030',
+      primary: '#063868',
+      textColor: '#ffffff',
+    },
   },
   plugins: [],
 };
-
