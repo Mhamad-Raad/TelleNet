@@ -8,9 +8,9 @@ import './hero.css';
 
 const Hero = () => {
   return (
-    <section className='flex flex-col w-full items-center justify-center phone:py-[50px] tablet:py-[100px] relative overflow-hidden'>
+    <section className='flex flex-col w-full items-center justify-center phone:py-[25px] tablet:py-0 relative overflow-hidden'>
       <Lights />
-      <div className='phone:p-[20px] tablet:p-[28px] laptop:p-[50px]'>
+      <div className='phone:p-[20px] tablet:p-[10px] laptop:p-[25px]'>
         <motion.h1
           initial={{
             opacity: 0,
@@ -20,7 +20,7 @@ const Hero = () => {
             opacity: 1,
             x: 0,
           }}
-          className='laptop:text-[68px] computer:text-[98px] tablet:text-[49px] phone:text-[24px] phone:mb-[10px] tablet:mb-0 phone:text-center tablet:text-left'
+          className='laptop:text-[68px] computer:text-[98px] tablet:text-[49px] phone:text-[24px] phone:mb-[10px] tablet:mb-0 phone:text-center tablet:text-left tablet:leading-[70px] laptop:leading-[100px] computer:leading-[120px]'
         >
           WE ARE
         </motion.h1>
@@ -33,7 +33,7 @@ const Hero = () => {
             opacity: 1,
             x: 0,
           }}
-          className='laptop:text-[68px] computer:text-[98px] tablet:text-[49px] phone:text-[20px] phone:text-center tablet:text-left'
+          className='laptop:text-[68px] computer:text-[98px] tablet:text-[49px] phone:text-[20px] phone:text-center tablet:text-left tablet:leading-[70px] laptop:leading-[100px] computer:leading-[120px]'
         >
           CUTTING EDGE SOLUTIONS
         </motion.h3>
@@ -64,7 +64,7 @@ const Hero = () => {
               opacity: 1,
               x: 0,
             }}
-            className='laptop:text-[68px] computer:text-[98px] tablet:text-[49px] phone:text-[32px] phone:text-center tablet:text-left phone:mt-[60px] tablet:mt-0 tablet:leading-[60px] computer:leading-[80px]'
+            className='laptop:text-[68px] computer:text-[98px] tablet:text-[49px] phone:text-[32px] phone:text-center tablet:text-left phone:mt-[50px] tablet:mt-0 tablet:leading-[60px] computer:leading-[80px]'
           >
             TELLENET<sub>PRO</sub>
           </motion.h2>
