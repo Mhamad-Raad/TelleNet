@@ -7,7 +7,7 @@ import LineSeperator from '.././UI/LineSeperator';
 
 const Footer = () => {
   return (
-    <footer className='flex flex-col gap-[10px] bg-bgColor'>
+    <footer className='flex flex-col gap-[10px] bg-bgColor pt-[100px]'>
       <LineSeperator />
       <div className='flex justify-between items-ceneter py-[40px] px-[16px] flex-wrap gap-[50px]'>
         <div className='flex justify-center items-center gap-[20px]'>
