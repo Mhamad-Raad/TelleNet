@@ -21,15 +21,15 @@ const Header = () => {
   };
 
   useMotionValueEvent(scrollY, 'change', (latest) => {
-    if (latest >= 100 && backgroundColor !== 'bg-[#36454f]') {
-      setBackgroundColor('bg-[#36454f]');
+    if (latest >= 100 && backgroundColor !== 'bg-bgSecondary') {
+      setBackgroundColor('bg-bgSecondary');
     } else if (latest < 100 && backgroundColor !== '') {
       setBackgroundColor('');
     }
   });
 
   return (
-    <header className='w-full phone:h-[90px] laptop:h-[100px]  bg-gradient-to-r from-cyan-500 to-blue-500'>
+    <header className='w-full phone:h-[90px] laptop:h-[100px] bg-gradient-to-r from-bgColor via-bgSecondary to-bgColor'>
       <nav
         className={`${backgroundColor} w-full fixed z-10 flex ease-out duration-100 phone:justify-between laptop:items-center laptop:py-6 laptop:px-10 phone:py-6 phone:px-3`}
       >
