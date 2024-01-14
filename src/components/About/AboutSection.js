@@ -14,14 +14,6 @@ const AboutSection = () => {
     setShowText(!showText);
   };
 
-  const aboutText = `is guided by four principles: customer obsession rather than competitor
-        focus, passion for invention, commitment to operational excellence, and
-        long-term thinking. We are driven by the excitement of building
-        technologies, inventing products, and providing services that change
-        lives. We embrace new ways of doing things, make decisions quickly, and
-        are not afraid to fail. We have the scope and capabilities of a large
-        company, and the spirit and heart of a small one.`;
-
   return (
     <section className='flex flex-col gap-[10px] items-center'>
       <h2 className='text-textColor text-[28px] font-black'>Get to Know Us</h2>
@@ -41,7 +33,13 @@ const AboutSection = () => {
         <span className='font-bold'>
           TelleNet <sub>Pro</sub>
         </span>{' '}
-        {aboutText}
+        is guided by four principles: customer obsession rather than competitor
+        focus, passion for invention, commitment to operational excellence, and
+        long-term thinking. We are driven by the excitement of building
+        technologies, inventing products, and providing services that change
+        lives. We embrace new ways of doing things, make decisions quickly, and
+        are not afraid to fail. We have the scope and capabilities of a large
+        company, and the spirit and heart of a small one.
       </motion.p>
       <div className='mt-8 rounded-md bg-gradient-to-r from-bgSecondary via-primary to-bgSecondary py-[4px] px-[3px] btn-bg'>
         <button

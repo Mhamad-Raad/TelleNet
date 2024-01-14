@@ -4,11 +4,15 @@ import createGlobe from 'cobe';
 import { useSpring } from 'react-spring';
 import { useEffect, useRef } from 'react';
 
+import useScreenSize from '../../CustomHooks/useScreenSize';
+
 const Globe = () => {
   const canvasRef = useRef();
   const pointerInteracting = useRef(null);
   const pointerInteractionMovement = useRef(0);
   let phi = 0;
+
+  const {width} = useScreenSize();
 
   const [{ r }, api] = useSpring(() => ({
     r: 0,
