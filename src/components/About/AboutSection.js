@@ -31,7 +31,7 @@ const AboutSection = () => {
       </p>
       <Globe />
       <motion.p
-        className={`text-center mt-10 px-10 ${showText ? '' : 'line-clamp-3'}`}
+        className={`text-center px-10 ${showText ? '' : 'line-clamp-3'}`}
         animate={{
           height: showText ? 'auto' : 75,
         }}
@@ -41,12 +41,14 @@ const AboutSection = () => {
         </span>{' '}
         {aboutText}
       </motion.p>
-      <button
-        onClick={toggleShow}
-        className='text-textColor text-[18px] font-bold hover:underline'
-      >
-        {showText ? 'Show Less' : 'Show More'}
-      </button>
+      <div class='mt-8 rounded-md bg-gradient-to-r from-bgSecondary via-primary to-bgSecondary py-[4px] px-[3px]'>
+        <button
+          onClick={toggleShow}
+          className='bg-bgColor rounded-md px-16 py-4 font-black tracking-[1px]'
+        >
+          {showText ? 'Show Less' : 'Show More'}
+        </button>
+      </div>
     </section>
   );
 };
