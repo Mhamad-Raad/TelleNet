@@ -25,7 +25,7 @@ const AboutSection = () => {
       </p>
       <Globe />
       <motion.p
-        className={`text-center px-10 ${showText ? '' : 'line-clamp-3'}`}
+        className={`text-center phone:px-6 tablet:px-10 ${showText ? '' : 'line-clamp-3'}`}
         animate={{
           height: showText ? 'auto' : 75,
         }}
@@ -41,7 +41,7 @@ const AboutSection = () => {
         are not afraid to fail. We have the scope and capabilities of a large
         company, and the spirit and heart of a small one.
       </motion.p>
-      <div className='mt-8 rounded-md bg-gradient-to-r from-bgSecondary via-primary to-bgSecondary py-[4px] px-[3px] btn-bg laptop:hidden'>
+      <div className='mt-8 rounded-md bg-gradient-to-r from-bgSecondary via-primary to-bgSecondary py-[4px] px-[3px] btn-bg computer:hidden'>
         <button
           onClick={toggleShow}
           className='bg-bgColor rounded-md px-16 py-4 font-black tracking-[1px] transition-colros duration-500 ease-in-out read-more-btn'
