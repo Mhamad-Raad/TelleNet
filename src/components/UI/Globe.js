@@ -4,7 +4,6 @@ import createGlobe from 'cobe';
 import { useSpring } from 'react-spring';
 import { useEffect, useRef } from 'react';
 
-import useScreenSize from '../../CustomHooks/useScreenSize';
 
 const Globe = () => {
   const canvasRef = useRef();
@@ -12,7 +11,6 @@ const Globe = () => {
   const pointerInteractionMovement = useRef(0);
   let phi = 0;
 
-  const {width} = useScreenSize();
 
   const [{ r }, api] = useSpring(() => ({
     r: 0,
@@ -23,6 +21,7 @@ const Globe = () => {
       precision: 0.001,
     },
   }));
+
   useEffect(() => {
     let width = 0;
     const onResize = () =>
@@ -31,8 +30,8 @@ const Globe = () => {
     onResize();
     const globe = createGlobe(canvasRef.current, {
       devicePixelRatio: 2,
-      width: 450 * 2,
-      height: 450 * 2,
+      width: 450,
+      height: 450,
       phi: 0,
       theta: 0,
       dark: 1,
@@ -63,6 +62,7 @@ const Globe = () => {
       style={{
         width: '100%',
         maxWidth: 600,
+        height: 'auto',
         aspectRatio: 1,
         margin: 'auto',
         position: 'relative',
