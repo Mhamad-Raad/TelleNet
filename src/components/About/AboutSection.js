@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 import LineSeperator from '.././UI/LineSeperator';
 import Globe from '../UI/Globe';
@@ -22,7 +23,6 @@ const AboutSection = () => {
   return (
     <section className='flex flex-col gap-[10px] items-center'>
       <h2 className='text-textColor text-[28px] font-black'>Get to Know Us</h2>
-      {/* write me a short paragraph */}
       <LineSeperator />
       <p className='text-center mt-10 px-10'>
         NetSpot provides cutting-edge technology solutions tailored to your
@@ -30,12 +30,17 @@ const AboutSection = () => {
         experts to enhance your digital world.
       </p>
       <Globe />
-      <p className='text-center mt-10 px-10'>
+      <motion.p
+        className={`text-center mt-10 px-10 ${showText ? '' : 'line-clamp-3'}`}
+        animate={{
+          height: showText ? 'auto' : 75,
+        }}
+      >
         <span className='font-bold'>
           TelleNet<sub>Pro</sub>
         </span>{' '}
-        {showText ? aboutText : aboutText.slice(0, 300)}
-      </p>
+        {aboutText}
+      </motion.p>
       <button
         onClick={toggleShow}
         className='text-textColor text-[18px] font-bold hover:underline'

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tailwindcss/line-clamp": "^0.4.4",
     "cobe": "^0.6.3",
     "framer-motion": "^10.17.9",
     "next": "^13.5.6",
