@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { Element } from 'react-scroll';
 
 import LineSeperator from '.././UI/LineSeperator';
 import Globe from '../UI/Globe';
@@ -15,17 +16,17 @@ const AboutSection = () => {
   };
 
   return (
-    <section className='flex flex-col gap-[10px] items-center'>
+    <section className='flex flex-col gap-[10px] items-center' id='about'>
       <h2 className='text-textColor text-[28px] font-black'>Get to Know Us</h2>
       <LineSeperator />
-      <p className='text-center mt-10 px-10'>
+      <p className='text-center mt-10 phone:px-5 tablet:px-10 text-[18px]'>
         NetSpot provides cutting-edge technology solutions tailored to your
         business needs, From cybersecurity to software development, trust our
         experts to enhance your digital world.
       </p>
       <Globe />
       <motion.p
-        className={`text-center phone:px-6 tablet:px-10 ${showText ? '' : 'line-clamp-3'}`}
+        className={`phone:text-justify tablet:text-center phone:px-5 tablet:px-10 ${showText ? '' : 'line-clamp-3'} text-[18px]`}
         animate={{
           height: showText ? 'auto' : 75,
         }}

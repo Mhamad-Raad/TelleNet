@@ -1,5 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
+import { Link, scroller } from 'react-scroll';
 import { IoIosArrowDown } from 'react-icons/io';
 
 import Lights from './Lights';
@@ -7,6 +8,15 @@ import Lights from './Lights';
 import './hero.css';
 
 const Hero = () => {
+  const scrollFunction = () => {
+    scroller.scrollTo('about-section', {
+      duration: 1500,
+      delay: 100,
+      smooth: true,
+      containerId: 'about-section',
+    });
+    console.log('clicked')
+  }
   return (
     <section className='flex flex-col w-full items-center justify-center phone:py-[25px] tablet:py-0 relative overflow-hidden'>
       <Lights />
@@ -70,6 +80,12 @@ const Hero = () => {
           </motion.h2>
         </div>
       </div>
+      <Link
+       to='about'
+            ignoreCancelEvents={true}
+            smooth={true}
+            duration={1200}
+      >hi </Link>
       <motion.button
         initial={{
           opacity: 0,
@@ -79,6 +95,7 @@ const Hero = () => {
           opacity: 1,
           y: 0,
         }}
+        onClick={scrollFunction}
         className='phone:mt-10 tablet:mt-14 phone:py-4 tablet:px-20 tablet:py-5 w-full flex justify-center items-center gap-10 bg-gradient-to-r from-bgColor via-[#063868] to-bgColor font-black phone:text-[20px] tablet:text-[24px] tracking-[2px] rounded-md'
       >
         Read More
