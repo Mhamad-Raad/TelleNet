@@ -1,0 +1,33 @@
+/* Add this to your stylesheet */
+.btn-bg {
+  background-position: 0% 0%;
+  background-size: 300% 100%;
+  transition: transform 400ms ease-in-out;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.btn-bg:hover {
+  background-position: 100% 0%;
+  transform: scale(1.05);
+}
+
+.read-more-btn {
+  background-position: 0% 0%;
+  background-size: 300% 100%;
+  transition: all 400ms ease-in-out;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  filter: blur(0px);
+}
+
+.read-more-btn:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(6, 56, 104) 30%,
+    rgb(16, 32, 48)
+  );
+  font-size: 18px;
+  background-position: 100% 0%;
+}
