@@ -6,6 +6,7 @@ import LineSeperator from '.././UI/LineSeperator';
 import Globe from '../UI/Globe';
 
 import './AboutSection.css';
+import { Element } from 'react-scroll';
 
 const AboutSection = () => {
   const [showText, setShowText] = useState(false);
@@ -19,7 +20,9 @@ const AboutSection = () => {
   };
 
   return (
-    <section className='flex flex-col gap-[10px] items-center' id='about'>
+    <section className="w-full">
+
+    <Element className='flex flex-col gap-[10px] items-center' id='about' name='about'>
       <h2 className='text-textColor text-[28px] font-black'>Get to Know Us</h2>
       <LineSeperator />
       <p
@@ -30,7 +33,7 @@ const AboutSection = () => {
           transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
         }}
         ref={textRef}
-      >
+        >
         NetSpot provides cutting-edge technology solutions tailored to your
         business needs, From cybersecurity to software development, trust our
         experts to enhance your digital world.
@@ -49,7 +52,7 @@ const AboutSection = () => {
           opacity: pIsInView ? 1 : 0,
           transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
         }}
-      >
+        >
         <span className='font-bold'>
           TelleNet <sub>Pro</sub>
         </span>{' '}
@@ -72,11 +75,12 @@ const AboutSection = () => {
         <button
           onClick={toggleShow}
           className='bg-bgColor rounded-md px-16 py-4 font-black tracking-[1px] transition-colros duration-500 ease-in-out read-more-btn'
-        >
+          >
           {showText ? 'Show Less' : 'Show More'}
         </button>
       </div>
-    </section>
+    </Element>
+          </section>
   );
 };
 

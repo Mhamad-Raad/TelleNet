@@ -20,6 +20,10 @@ const Header = () => {
     setShowNavbar(!showNavbar);
   };
 
+  const test = () => {
+    console.log('active');
+  };
+
   useMotionValueEvent(scrollY, 'change', (latest) => {
     if (latest >= 100 && backgroundColor !== 'bg-bgSecondary') {
       setBackgroundColor('bg-bgSecondary');
@@ -47,9 +51,13 @@ const Header = () => {
           <li>
             <Link
               to='about'
+              spy={true}
+              activeClass='text-secondary'
+              onSetActive={test}
               ignoreCancelEvents={true}
               smooth={true}
               duration={1200}
+              offset={-110}
             >
               About
             </Link>
@@ -84,10 +92,12 @@ const Header = () => {
             <li className='w-full text-[30px] py-5 text-center hover:bg-cyan-500 ease-out duration-200'>
               <Link
                 to='about'
+                activeClass='text-secondary'
                 ignoreCancelEvents={true}
                 smooth={true}
                 duration={1200}
                 onClick={toggleNavbar}
+                spy={true}
               >
                 About
               </Link>
