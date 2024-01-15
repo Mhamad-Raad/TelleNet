@@ -1,13 +1,13 @@
+'use client';
+
 import { Element } from 'react-scroll';
 
-const ServicesSection = () => {
+const AboutSection = () => {
   return (
-    <Element className="w-full" id="services" name="services">
-      <section className="">
+    <section className='w-full'>
+      <Element name='services' id='services'></Element>
+    </section>
+  );
+};
 
-      </section>
-    </Element>
-  )
-}
-
-export default ServicesSection
+export default AboutSection;
