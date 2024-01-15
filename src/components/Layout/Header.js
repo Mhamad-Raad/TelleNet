@@ -63,7 +63,8 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link to='' ignoreCancelEvents={true} smooth={true} duration={1200}>
+            <Link  to='services'
+              spy={true} ignoreCancelEvents={true} smooth={true} duration={1200}>
               Services
             </Link>
           </li>
@@ -104,7 +105,8 @@ const Header = () => {
             </li>
             <li className='w-full text-[30px] py-5 text-center hover:bg-cyan-500 ease-out duration-200'>
               <Link
-                to=''
+                to='services'
+                spy={true}
                 ignoreCancelEvents={true}
                 smooth={true}
                 duration={1200}
