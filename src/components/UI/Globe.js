@@ -4,13 +4,11 @@ import createGlobe from 'cobe';
 import { useSpring } from 'react-spring';
 import { useEffect, useRef } from 'react';
 
-
-const Globe = () => {
+const Globe = ({textIsInView}) => {
   const canvasRef = useRef();
   const pointerInteracting = useRef(null);
   const pointerInteractionMovement = useRef(0);
   let phi = 0;
-
 
   const [{ r }, api] = useSpring(() => ({
     r: 0,
@@ -66,6 +64,9 @@ const Globe = () => {
         aspectRatio: 1,
         margin: 'auto',
         position: 'relative',
+        transform: textIsInView ? 'none' : 'translateX(200px)',
+        opacity: textIsInView ? 1 : 0,
+        transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
       }}
     >
       <canvas
