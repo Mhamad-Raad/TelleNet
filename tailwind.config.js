@@ -23,8 +23,9 @@ module.exports = {
       bgColor: '#0d1115',
       bgSecondary: '#102030',
       primary: '#063868',
+      secondary: '#84c0df',
       textColor: '#ffffff',
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/line-clamp')],
 };

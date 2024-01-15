@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import Link from 'next/link';
+import { Link } from 'react-scroll';
 import { useState } from 'react';
 import {
   useScroll,
@@ -20,6 +20,10 @@ const Header = () => {
     setShowNavbar(!showNavbar);
   };
 
+  const test = () => {
+    console.log('active');
+  };
+
   useMotionValueEvent(scrollY, 'change', (latest) => {
     if (latest >= 100 && backgroundColor !== 'bg-bgSecondary') {
       setBackgroundColor('bg-bgSecondary');
@@ -29,7 +33,7 @@ const Header = () => {
   });
 
   return (
-    <header className='w-full phone:h-[90px] laptop:h-[100px] bg-gradient-to-r from-bgColor via-bgSecondary to-bgColor'>
+    <header className='w-full phone:h-[90px] laptop:h-[100px] bg-gradient-to-r from-bgColor via-bgSecondary to-bgColor border-b'>
       <nav
         className={`${backgroundColor} w-full fixed z-10 flex ease-out duration-100 phone:justify-between laptop:items-center laptop:py-6 laptop:px-10 phone:py-6 phone:px-3`}
       >
@@ -45,13 +49,28 @@ const Header = () => {
         </div>
         <ul className='font-bold laptop:flex laptop:text-lg laptop:gap-12 phone:hidden'>
           <li>
-            <Link href='/'>About</Link>
+            <Link
+              to='about'
+              spy={true}
+              activeClass='text-secondary'
+              onSetActive={test}
+              ignoreCancelEvents={true}
+              smooth={true}
+              duration={1200}
+              offset={-110}
+            >
+              About
+            </Link>
           </li>
           <li>
-            <Link href='/'>Services</Link>
+            <Link to='' ignoreCancelEvents={true} smooth={true} duration={1200}>
+              Services
+            </Link>
           </li>
           <li>
-            <Link href='/'>Contact</Link>
+            <Link to='' ignoreCancelEvents={true} smooth={true} duration={1200}>
+              Contact
+            </Link>
           </li>
         </ul>
         <button className='laptop:hidden phone:inline' onClick={toggleNavbar}>
@@ -71,13 +90,37 @@ const Header = () => {
             exit={{ opacity: 0, y: -50 }}
           >
             <li className='w-full text-[30px] py-5 text-center hover:bg-cyan-500 ease-out duration-200'>
-              <Link href='/'>About</Link>
+              <Link
+                to='about'
+                activeClass='text-secondary'
+                ignoreCancelEvents={true}
+                smooth={true}
+                duration={1200}
+                onClick={toggleNavbar}
+                spy={true}
+              >
+                About
+              </Link>
             </li>
             <li className='w-full text-[30px] py-5 text-center hover:bg-cyan-500 ease-out duration-200'>
-              <Link href='/'>Services</Link>
+              <Link
+                to=''
+                ignoreCancelEvents={true}
+                smooth={true}
+                duration={1200}
+              >
+                Services
+              </Link>
             </li>
             <li className='w-full text-[30px] py-5 text-center hover:bg-cyan-500 ease-out duration-200'>
-              <Link href='/'>Contact</Link>
+              <Link
+                to=''
+                ignoreCancelEvents={true}
+                smooth={true}
+                duration={1200}
+              >
+                Contact
+              </Link>
             </li>
           </motion.ul>
         )}

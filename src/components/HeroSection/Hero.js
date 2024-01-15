@@ -1,5 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
+import { Link } from 'react-scroll';
 import { IoIosArrowDown } from 'react-icons/io';
 
 import Lights from './Lights';
@@ -70,7 +71,7 @@ const Hero = () => {
           </motion.h2>
         </div>
       </div>
-      <motion.button
+      <motion.div
         initial={{
           opacity: 0,
           y: 50,
@@ -79,13 +80,21 @@ const Hero = () => {
           opacity: 1,
           y: 0,
         }}
-        className='phone:mt-10 tablet:mt-14 phone:py-4 tablet:px-20 tablet:py-5 w-full flex justify-center items-center gap-10 bg-gradient-to-r from-bgColor via-[#063868] to-bgColor font-black phone:text-[20px] tablet:text-[24px] tracking-[2px] rounded-md'
+        className='w-full'
       >
-        Read More
-        <div className='phone:p-[5px] tablet:p-3 rounded-full bg-bgColor bounce'>
-          <IoIosArrowDown className='phone:text-[20px] tablet:text-[28px]' />
-        </div>
-      </motion.button>
+        <Link
+          to='about'
+          ignoreCancelEvents={true}
+          smooth={true}
+          duration={1200}
+          className='phone:mt-10 tablet:mt-14 phone:py-4 tablet:px-20 tablet:py-5 w-full flex justify-center items-center gap-10 bg-gradient-to-r from-bgColor via-[#063868] to-bgColor font-black phone:text-[20px] tablet:text-[24px] tracking-[2px] rounded-md'
+        >
+          Read More
+          <div className='phone:p-[5px] tablet:p-3 rounded-full bg-bgColor bounce'>
+            <IoIosArrowDown className='phone:text-[20px] tablet:text-[28px]' />
+          </div>
+        </Link>
+      </motion.div>
     </section>
   );
 };
