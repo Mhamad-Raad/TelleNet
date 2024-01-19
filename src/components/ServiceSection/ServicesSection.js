@@ -1,6 +1,7 @@
 'use client';
 
 import { Element } from 'react-scroll';
+
 import ServiceItem from './ServiceItem';
 import LineSeperator from '.././UI/LineSeperator';
 
@@ -29,18 +30,21 @@ const AboutSection = () => {
             Title='Composition'
             Description="NetSpot's solutions let you build a flexible and adaptable business
           with unmatched agility and efficiency."
+            animation={1}
           />
           <ServiceItem
             ImageSrc={Layer}
             Title='Composition'
             Description="NetSpot's solutions let you build a flexible and adaptable business
           with unmatched agility and efficiency."
+            animation={2}
           />
           <ServiceItem
             ImageSrc={Layer}
             Title='Composition'
             Description="NetSpot's solutions let you build a flexible and adaptable business
           with unmatched agility and efficiency."
+            animation={3}
           />
         </div>
       </Element>

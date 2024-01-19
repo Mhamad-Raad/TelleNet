@@ -1,31 +1,49 @@
 import Image from 'next/image';
 import { useRef, useEffect } from 'react';
+import { motion, useInView } from 'framer-motion';
 
 import './style.css';
 
-const ServiceItem = ({ ImageSrc, Title, Description }) => {
-  const buttonRef = useRef(null);
+const ServiceItem = ({ ImageSrc, Title, Description, animation }) => {
+  const containerRef = useRef(null);
+  const animationRef = useRef();
+
+  const isInView = useInView(animationRef, { once: true });
+
+  let style = '';
 
   function mouseMoveEvent(e) {
-    const { x, y } = buttonRef.current.getBoundingClientRect();
-    buttonRef.current.style.setProperty('--x', e.clientX - x);
-    buttonRef.current.style.setProperty('--y', e.clientY - y);
+    const { x, y } = containerRef.current.getBoundingClientRect();
+    containerRef.current.style.setProperty('--x', e.clientX - x);
+    containerRef.current.style.setProperty('--y', e.clientY - y);
   }
 
   useEffect(() => {
-    if (buttonRef) {
-      buttonRef.current.addEventListener('mousemove', mouseMoveEvent);
+    if (containerRef) {
+      containerRef.current.addEventListener('mousemove', mouseMoveEvent);
     }
 
     return () =>
-      buttonRef.current.removeEventListener('mousemove', mouseMoveEvent);
-  }, [buttonRef]);
+      containerRef.current.removeEventListener('mousemove', mouseMoveEvent);
+  }, [containerRef]);
+
+  if (animation === 1) style = 'translateX(-100px)';
+  else if (animation === 2) style = 'translateY(-100px)';
+  else style = 'translateX(100px)';
 
   return (
-    <div className='phone:max-w-[275px] computer:max-w-[400px] p-1 rounded-md bg-gradient-to-br from-bgSecondary from-30% via-primary via-50%  to-bgSecondary to-75% ease-in duration-200 transission-transform hover:scale-105'>
+    <motion.div
+      className='phone:max-w-[275px] computer:max-w-[400px] p-1 rounded-md bg-gradient-to-br from-bgSecondary from-30% via-primary via-50%  to-bgSecondary to-75% ease-in duration-200 transission-transform hover:scale-105'
+      ref={animationRef}
+      style={{
+        transform: isInView ? 'none' : style,
+        opacity: isInView ? 1 : 0,
+        transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+      }}
+    >
       <div
         className='w-full h-full px-3 py-7 flex flex-col items-center gap-2 rounded-md bg-bgColor shiny hover:cursor-none'
-        ref={buttonRef}
+        ref={containerRef}
       >
         <Image
           src={ImageSrc}
@@ -39,7 +57,7 @@ const ServiceItem = ({ ImageSrc, Title, Description }) => {
           {Description}
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
