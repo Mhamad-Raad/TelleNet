@@ -1,6 +1,8 @@
 'use client';
 
 import { Element } from 'react-scroll';
+import { motion, useInView } from 'framer-motion';
+import { useRef } from 'react';
 
 import ServiceItem from './ServiceItem';
 import LineSeperator from '.././UI/LineSeperator';
@@ -8,6 +10,9 @@ import LineSeperator from '.././UI/LineSeperator';
 import Layer from '@/assets/layer.png';
 
 const AboutSection = () => {
+  const ref = useRef();
+  const isInView = useInView(ref, { once: true });
+
   return (
     <section className='w-full'>
       <Element
@@ -19,11 +24,19 @@ const AboutSection = () => {
           How Can We Help
         </h2>
         <LineSeperator />
-        <p className='text-center mt-1 phone:px-4 computer:text-[20px]'>
+        <motion.p
+          className='text-center mt-1 phone:px-4 computer:text-[20px]'
+          ref={ref}
+          style={{
+            transform: isInView ? 'none' : 'translateY(100px)',
+            opacity: isInView ? 1 : 0,
+            transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+          }}
+        >
           Experience exponential business growth with Netspot's services.
           Develop your business like never before with our innovative solutions
           and expert guidance.
-        </p>
+        </motion.p>
         <div className='flex flex-wrap items-center justify-center gap-10 mt-16 phone:px-4'>
           <ServiceItem
             ImageSrc={Layer}
