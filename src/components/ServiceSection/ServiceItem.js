@@ -32,7 +32,7 @@ const ServiceItem = ({ ImageSrc, Title, Description }) => {
           className='phone:w-[150px] phone:h-[150px] computer:w-[175px] computer:h-[175px]'
           alt=''
         />
-        <h3 className='phone:text-[18px] computer:text-[22px] mt-4 font-black text-primary text-center'>
+        <h3 className='phone:text-[18px] computer:text-[22px] mt-4 font-black text-[#4d7ca8] text-center'>
           {Title}
         </h3>
         <p className='phone:text-[16px] computer:text-[18px] text-center text-[#698097] phone:leading-[20px] computer:leading-[24px] computer:mt-4'>
