@@ -65,13 +65,22 @@ const Header = () => {
               ignoreCancelEvents={true}
               smooth={true}
               duration={1200}
+              offset={-110}
             >
               Services
             </Link>
           </li>
           <li>
-            <Link to='' ignoreCancelEvents={true} smooth={true} duration={1200}>
-              Contact
+            <Link
+              to='products'
+              ignoreCancelEvents={true}
+              smooth={true}
+              duration={1200}
+              spy={true}
+              activeClass='text-secondary'
+              offset={-110}
+            >
+              Products
             </Link>
           </li>
         </ul>
@@ -100,6 +109,7 @@ const Header = () => {
                 duration={1200}
                 onClick={toggleNavbar}
                 spy={true}
+                offset={-110}
               >
                 About
               </Link>
@@ -122,8 +132,9 @@ const Header = () => {
                 ignoreCancelEvents={true}
                 smooth={true}
                 duration={1200}
+                offset={-110}
               >
-                Contact
+                Products
               </Link>
             </li>
           </motion.ul>
