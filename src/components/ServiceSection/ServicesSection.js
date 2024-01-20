@@ -33,9 +33,9 @@ const AboutSection = () => {
             transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
           }}
         >
-          Experience exponential business growth with Netspot's services.
+          {`Experience exponential business growth with Netspot's services.
           Develop your business like never before with our innovative solutions
-          and expert guidance.
+          and expert guidance.`}
         </motion.p>
         <div className='flex flex-wrap items-center justify-center gap-10 mt-16 phone:px-4'>
           <ServiceItem
