@@ -42,7 +42,7 @@ const ServiceItem = ({ ImageSrc, Title, Description, animation }) => {
       }}
     >
       <div
-        className='w-full h-full px-3 py-7 flex flex-col items-center gap-2 rounded-md bg-bgColor shiny hover:cursor-none'
+        className='w-full h-full px-3 py-7 flex flex-col items-center gap-2 rounded-md shiny hover:cursor-none content'
         ref={containerRef}
       >
         <Image
