@@ -8,7 +8,7 @@ import Layers from '@/assets/layer.png';
 
 const ProductsList = () => {
   return (
-    <section className='phone:px-6 tablet:px-20'>
+    <section className='phone:px-6 tablet:px-20 overflow-hidden'>
       <Element name='products' id='products' className='flex flex-col gap-20'>
         <ProductsItem
           ImageSrc={Layers}
