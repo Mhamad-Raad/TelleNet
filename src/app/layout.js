@@ -1,7 +1,7 @@
-import './globals.css';
-
 import Header from '@/components/Layout/Header';
 import Footer from '@/components/Layout/Footer';
+
+import './globals.css';
 
 export const metadata = {
   title: 'TelleNet Pro',
@@ -11,7 +11,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <body className="bg-bgColor text-textColor">
+      <head>
+        <link rel="icon" href="/icon.png" />
+      </head>
+      <body className='bg-bgColor text-textColor'>
         <Header />
         {children}
         <Footer />
@@ -19,4 +22,3 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-
