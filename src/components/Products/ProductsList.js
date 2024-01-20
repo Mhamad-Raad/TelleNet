@@ -6,7 +6,7 @@ import ProductsItem from './ProfuctsItem';
 
 const ProductsList = () => {
   return (
-    <section className='px-20'>
+    <section className='phone:px-6 tablet:px-20'>
       <Element name='products' id='products'>
         <ProductsItem />
       </Element>
