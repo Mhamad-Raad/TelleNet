@@ -20,10 +20,6 @@ const Header = () => {
     setShowNavbar(!showNavbar);
   };
 
-  const test = () => {
-    console.log('active');
-  };
-
   useMotionValueEvent(scrollY, 'change', (latest) => {
     if (latest >= 100 && backgroundColor !== 'bg-bgSecondary') {
       setBackgroundColor('bg-bgSecondary');
@@ -53,7 +49,6 @@ const Header = () => {
               to='about'
               spy={true}
               activeClass='text-secondary'
-              onSetActive={test}
               ignoreCancelEvents={true}
               smooth={true}
               duration={1200}
@@ -63,13 +58,29 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link to='' ignoreCancelEvents={true} smooth={true} duration={1200}>
+            <Link
+              to='services'
+              spy={true}
+              activeClass='text-secondary'
+              ignoreCancelEvents={true}
+              smooth={true}
+              duration={1200}
+              offset={-110}
+            >
               Services
             </Link>
           </li>
           <li>
-            <Link to='' ignoreCancelEvents={true} smooth={true} duration={1200}>
-              Contact
+            <Link
+              to='products'
+              ignoreCancelEvents={true}
+              smooth={true}
+              duration={1200}
+              spy={true}
+              activeClass='text-secondary'
+              offset={-110}
+            >
+              Products
             </Link>
           </li>
         </ul>
@@ -98,13 +109,16 @@ const Header = () => {
                 duration={1200}
                 onClick={toggleNavbar}
                 spy={true}
+                offset={-110}
               >
                 About
               </Link>
             </li>
             <li className='w-full text-[30px] py-5 text-center hover:bg-cyan-500 ease-out duration-200'>
               <Link
-                to=''
+                to='services'
+                spy={true}
+                activeClass='text-secondary'
                 ignoreCancelEvents={true}
                 smooth={true}
                 duration={1200}
@@ -118,8 +132,9 @@ const Header = () => {
                 ignoreCancelEvents={true}
                 smooth={true}
                 duration={1200}
+                offset={-110}
               >
-                Contact
+                Products
               </Link>
             </li>
           </motion.ul>
