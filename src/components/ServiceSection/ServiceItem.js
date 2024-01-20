@@ -33,7 +33,7 @@ const ServiceItem = ({ ImageSrc, Title, Description, animation }) => {
 
   return (
     <motion.div
-      className='phone:max-w-[275px] computer:max-w-[400px] p-1 rounded-md bg-gradient-to-br from-bgSecondary from-30% via-primary via-50%  to-bgSecondary to-75% ease-in duration-200 transission-transform hover:scale-105'
+      className='phone:max-w-[275px] computer:max-w-[400px] p-1 rounded-md service'
       ref={animationRef}
       style={{
         transform: isInView ? 'none' : style,

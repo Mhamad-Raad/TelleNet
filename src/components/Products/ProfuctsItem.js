@@ -8,7 +8,7 @@ const ProductsItem = () => {
       <div className='bg-bgColor rounded-md flex phone:flex-col tablet:flex-row items-center justify-between phone:p-4 tablet:p-10 laptop:p-20 phone:gap-8'>
         <div className='flex flex-col'>
           <h4 className='phone:text-[24px] tablet:text-[30px] phone:mb-1'>Product 1</h4>
-          <p className='phone:text-[14px] tablet:text-[16px] phone:w-[100%] tablet:w-[90%] laptop:w-[75%] text-[#7a92b1]'>
+          <p className='phone:text-[14px] tablet:text-[16px] laptop:text-[20px] phone:w-[100%] tablet:w-[90%] laptop:w-[75%] text-[#7a92b1]'>
             our innovative eGovernment Solutions can help you streamline
             identity management, unleash the potential of OCR technology, and
             enhance efficiency and security.
