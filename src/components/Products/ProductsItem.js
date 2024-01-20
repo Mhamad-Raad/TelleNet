@@ -4,7 +4,7 @@ import { useRef } from 'react';
 
 const ProductsItem = ({ ImageSrc, Title, Description, animation }) => {
   const ref = useRef();
-  const isInView = useInView(ref);
+  const isInView = useInView(ref, { once: true });
 
   let style = '';
   const containerVariants = {
