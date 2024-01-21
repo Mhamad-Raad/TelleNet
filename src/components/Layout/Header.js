@@ -52,7 +52,7 @@ const Header = () => {
             <Link
               to='about'
               spy={true}
-              activeClass='text-secondary'
+              activeClass='text-[#5792fb]'
               ignoreCancelEvents={true}
               smooth={true}
               duration={1200}
@@ -65,7 +65,7 @@ const Header = () => {
             <Link
               to='services'
               spy={true}
-              activeClass='text-secondary'
+              activeClass='text-[#5792fb]'
               ignoreCancelEvents={true}
               smooth={true}
               duration={1200}
@@ -81,7 +81,7 @@ const Header = () => {
               smooth={true}
               duration={1200}
               spy={true}
-              activeClass='text-secondary'
+              activeClass='text-[#5792fb]'
               offset={-110}
             >
               Products
@@ -95,7 +95,7 @@ const Header = () => {
               smooth={true}
               duration={1200}
               spy={true}
-              activeClass='text-secondary'
+              activeClass='text-[#5792fb]'
               offset={-110}
             >
               <span></span>
@@ -122,10 +122,11 @@ const Header = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -50 }}
           >
-            <li className='w-full text-[30px] py-5 text-center hover:bg-primary ease-out duration-200'>
+            <li className='flex text-[30px] text-center hover:bg-primary ease-out duration-200'>
               <Link
                 to='about'
-                activeClass='text-secondary'
+                activeClass='bg-[#5792fb]'
+                className='w-full py-5'
                 ignoreCancelEvents={true}
                 smooth={true}
                 duration={1200}
@@ -136,11 +137,12 @@ const Header = () => {
                 About
               </Link>
             </li>
-            <li className='w-full text-[30px] py-5 text-center hover:bg-primary ease-out duration-200'>
+            <li className='flex text-[30px] text-center hover:bg-primary ease-out duration-200'>
               <Link
                 to='services'
+                className='w-full py-5'
                 spy={true}
-                activeClass='text-secondary'
+                activeClass='bg-[#5792fb]'
                 ignoreCancelEvents={true}
                 smooth={true}
                 duration={1200}
@@ -150,11 +152,12 @@ const Header = () => {
                 Services
               </Link>
             </li>
-            <li className='w-full text-[30px] py-5 text-center hover:bg-primary ease-out duration-200'>
+            <li className='flex text-[30px] text-center hover:bg-primary ease-out duration-200'>
               <Link
                 to='products'
                 ignoreCancelEvents={true}
-                activeClass='text-secondary'
+                className='w-full py-5'
+                activeClass='bg-[#5792fb]'
                 spy={true}
                 smooth={true}
                 duration={1200}
@@ -168,7 +171,6 @@ const Header = () => {
               <Link
                 to='contact'
                 className='flex items-center justify-center gap-4'
-                activeClass='text-secondary'
                 spy={true}
                 ignoreCancelEvents={true}
                 smooth={true}
