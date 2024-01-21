@@ -2,6 +2,7 @@ import Hero from '../components/HeroSection/Hero';
 import AboutSection from '@/components/About/AboutSection';
 import ServicesSection from '@/components/ServiceSection/ServicesSection';
 import ProductsList from '@/components/Products/ProductsList';
+import Contact from '@/components/ContactSection/ContactSection';
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <AboutSection />
       <ServicesSection />
       <ProductsList />
+      <Contact />
     </main>
   );
 };
