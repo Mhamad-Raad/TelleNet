@@ -108,7 +108,7 @@ const ContactForm = () => {
   return (
     <motion.form
       ref={form}
-      className={`w-1/2 flex flex-col items-center justify-center border rounded-xl border-primary p-[20px] bg-[#242f3f] backdrop-opacity-10 max-w-[750px] ${
+      className={`phone:w-full laptop:w-1/2 flex flex-col items-center justify-center border rounded-xl border-primary p-[20px] bg-[#242f3f] backdrop-opacity-10 max-w-[750px] ${
         validText ? '' : 'error'
       }`}
       onSubmit={formSubmissionHandler}

@@ -17,9 +17,9 @@ const Contact = () => {
       <Element
         name='contact'
         id='contact'
-        className='p-10 flex justify-between gap-20'
+        className='p-10 flex justify-between items-center gap-20 phone:flex-col laptop:flex-row'
       >
-        <div className='w-1/2'>
+        <div className='phone:w-full laptop:w-1/2'>
           <h3 className='font-black text-[24px] text-textColor mb-[10px]'>
             Get in Touch with Us
           </h3>
