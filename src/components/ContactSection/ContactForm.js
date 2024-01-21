@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
-import { FaSmileWink } from 'react-icons/fa';
+import { MdDoneOutline } from 'react-icons/md';
 
 import './style.css';
 
@@ -108,7 +108,7 @@ const ContactForm = () => {
   return (
     <motion.form
       ref={form}
-      className={`phone:w-full laptop:w-1/2 flex flex-col items-center justify-center border rounded-xl border-primary p-[20px] bg-[#242f3f] backdrop-opacity-10 max-w-[750px] ${
+      className={`phone:w-full laptop:w-1/2 flex flex-col items-center justify-center border rounded-xl border-primary p-[20px] backdrop-opacity-10 max-w-[750px] ${
         validText ? '' : 'error'
       }`}
       onSubmit={formSubmissionHandler}
@@ -191,9 +191,14 @@ const ContactForm = () => {
         </button>
       )}
       {submitted && (
-        <button type='button' value='Send' disabled={true}>
-          Thanks
-          <FaSmileWink />
+        <button
+          type='button'
+          value='Send'
+          disabled={true}
+          className='flex items-center gap-2'
+        >
+          Sent
+          <MdDoneOutline />
         </button>
       )}
 
