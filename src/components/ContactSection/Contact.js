@@ -8,7 +8,7 @@ const Contact = () => {
     <section>
       <Element name='contact' id='contact' className='p-10'>
         <div className="w-full h-[750px]">
-
+          
         </div>
       </Element>
     </section>

@@ -33,7 +33,7 @@ const Header = () => {
       <nav
         className={`${backgroundColor} w-full fixed z-10 flex ease-out duration-100 phone:justify-between laptop:items-center laptop:py-6 laptop:px-10 phone:py-6 phone:px-3`}
       >
-        <div className='flex items-center laptop:gap-3 phone:w-full'>
+        <div className='flex items-center laptop:gap-3'>
           <Image
             alt='TelleNet Logo'
             src={Logo}
@@ -83,6 +83,19 @@ const Header = () => {
               Products
             </Link>
           </li>
+          <li>
+            <Link
+              to='contact'
+              ignoreCancelEvents={true}
+              smooth={true}
+              duration={1200}
+              spy={true}
+              activeClass='text-secondary'
+              offset={-110}
+            >
+              Contact Us
+            </Link>
+          </li>
         </ul>
         <button className='laptop:hidden phone:inline' onClick={toggleNavbar}>
           <div className='p-[10px] space-y-[5px] border-[1px] border-textColor rounded shadow'>
@@ -122,19 +135,38 @@ const Header = () => {
                 ignoreCancelEvents={true}
                 smooth={true}
                 duration={1200}
+                offset={-110}
+                onClick={toggleNavbar}
               >
                 Services
               </Link>
             </li>
             <li className='w-full text-[30px] py-5 text-center hover:bg-cyan-500 ease-out duration-200'>
               <Link
-                to=''
+                to='products'
+                ignoreCancelEvents={true}
+                activeClass='text-secondary'
+                spy={true}
+                smooth={true}
+                duration={1200}
+                offset={-110}
+                onClick={toggleNavbar}
+              >
+                Products
+              </Link>
+            </li>
+            <li className='w-full text-[30px] py-5 text-center hover:bg-cyan-500 ease-out duration-200'>
+              <Link
+                to='contact'
+                activeClass='text-secondary'
+                spy={true}
                 ignoreCancelEvents={true}
                 smooth={true}
                 duration={1200}
                 offset={-110}
+                onClick={toggleNavbar}
               >
-                Products
+                Contact Us
               </Link>
             </li>
           </motion.ul>
