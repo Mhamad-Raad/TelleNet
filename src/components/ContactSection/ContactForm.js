@@ -95,9 +95,6 @@ const ContactForm = () => {
           setLoading(false);
         },
         (error) => {
-          window.alert(
-            `Sorry an error occured, Please try again Later. Error Message: ${error.message}`
-          );
           setLoading(false);
           setSubmitError(true);
         }
@@ -204,7 +201,7 @@ const ContactForm = () => {
 
       {submitError && (
         <button type='button' value='Send' disabled={true}>
-          Oops!!!
+          Oops!!! Please try again later!
         </button>
       )}
     </motion.form>
