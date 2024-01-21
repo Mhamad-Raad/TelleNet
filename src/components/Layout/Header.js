@@ -33,11 +33,11 @@ const Header = () => {
   });
 
   return (
-    <header className='w-full phone:h-[90px] laptop:h-[100px] bg-gradient-to-r from-bgColor via-bgSecondary to-bgColor border-b'>
+    <header className='w-full phone:h-[100px] bg-gradient-to-r from-bgColor via-bgSecondary to-bgColor border-b'>
       <nav
         className={`${backgroundColor} w-full fixed z-10 flex ease-out duration-100 phone:justify-between laptop:items-center laptop:py-6 laptop:px-10 phone:py-6 phone:px-3`}
       >
-        <div className='flex items-center laptop:gap-3'>
+        <div className='flex items-center gap-3'>
           <Image
             alt='TelleNet Logo'
             src={Logo}
@@ -107,10 +107,27 @@ const Header = () => {
           </li>
         </ul>
         <button className='laptop:hidden phone:inline' onClick={toggleNavbar}>
-          <div className='p-[10px] space-y-[5px] border-[1px] border-textColor rounded shadow'>
-            <span className='block w-6 h-0.5 bg-textColor animate-pulse'></span>
-            <span className='block w-6 h-0.5 bg-textColor animate-pulse'></span>
-            <span className='block w-6 h-0.5 bg-textColor animate-pulse'></span>
+          <div
+            className={`space-y-[5px] border-[1px] border-textColor rounded shadow animate-pulse relative`}
+          >
+            <svg
+              className={`ham6 ${showNavbar ? 'active' : ''}`}
+              viewBox='0 0 100 100'
+              width='60'
+            >
+              <path
+                className='line top'
+                d='m 30,33 h 40 c 13.100415,0 14.380204,31.80258 6.899646,33.421777 -24.612039,5.327373 9.016154,-52.337577 -12.75751,-30.563913 l -28.284272,28.284272'
+              />
+              <path
+                className='line middle'
+                d='m 70,50 c 0,0 -32.213436,0 -40,0 -7.786564,0 -6.428571,-4.640244 -6.428571,-8.571429 0,-5.895471 6.073743,-11.783399 12.286435,-5.570707 6.212692,6.212692 28.284272,28.284272 28.284272,28.284272'
+              />
+              <path
+                className='line bottom'
+                d='m 69.575405,67.073826 h -40 c -13.100415,0 -14.380204,-31.80258 -6.899646,-33.421777 24.612039,-5.327373 -9.016154,52.337577 12.75751,30.563913 l 28.284272,-28.284272'
+              />
+            </svg>
           </div>
         </button>
       </nav>
