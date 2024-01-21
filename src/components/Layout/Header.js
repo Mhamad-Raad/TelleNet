@@ -9,6 +9,8 @@ import {
   motion,
 } from 'framer-motion';
 
+import { FiSend } from 'react-icons/fi';
+
 import Logo from '@/assets/Logo.png';
 
 import './style.css';
@@ -115,7 +117,7 @@ const Header = () => {
       <AnimatePresence>
         {showNavbar && (
           <motion.ul
-            className='w-full z-10 font-bold flex flex-col gap-y-2 bg-bgSecondary fixed top-[85px] py-8'
+            className='w-full z-10 font-bold flex flex-col gap-y-2 bg-bgSecondary fixed top-[85px] pt-8'
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -50 }}
@@ -162,9 +164,10 @@ const Header = () => {
                 Products
               </Link>
             </li>
-            <li className='w-full text-[30px] py-5 text-center hover:bg-primary ease-out duration-200'>
+            <li className='w-full text-[30px] py-5 text-center hover:bg-primary ease-out duration-200 button-63'>
               <Link
                 to='contact'
+                className='flex items-center justify-center gap-4'
                 activeClass='text-secondary'
                 spy={true}
                 ignoreCancelEvents={true}
@@ -173,7 +176,7 @@ const Header = () => {
                 offset={-110}
                 onClick={toggleNavbar}
               >
-                Contact Us
+                <FiSend /> Contact Us
               </Link>
             </li>
           </motion.ul>

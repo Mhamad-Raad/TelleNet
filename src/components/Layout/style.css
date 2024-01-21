@@ -111,3 +111,14 @@
     transform: translateY(100%);
   }
 }
+
+/* mobile version */
+
+.button-63 {
+  background: linear-gradient(
+    109.6deg,
+    rgb(61, 121, 176) 11.3%,
+    rgb(35, 66, 164) 91.1%
+  );
+  border-radius: 8px;
+}
