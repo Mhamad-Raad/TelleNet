@@ -11,6 +11,8 @@ import {
 
 import Logo from '@/assets/Logo.png';
 
+import './style.css';
+
 const Header = () => {
   const { scrollY } = useScroll();
   const [backgroundColor, setBackgroundColor] = useState('');
@@ -43,7 +45,7 @@ const Header = () => {
             TelleNet <sub>Pro</sub>
           </h1>
         </div>
-        <ul className='font-bold laptop:flex laptop:text-lg laptop:gap-12 phone:hidden'>
+        <ul className='font-bold laptop:flex laptop:items-center laptop:text-lg laptop:gap-12 phone:hidden'>
           <li>
             <Link
               to='about'
@@ -85,6 +87,7 @@ const Header = () => {
           </li>
           <li>
             <Link
+              className='animated-button1'
               to='contact'
               ignoreCancelEvents={true}
               smooth={true}
@@ -93,6 +96,10 @@ const Header = () => {
               activeClass='text-secondary'
               offset={-110}
             >
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
               Contact Us
             </Link>
           </li>
@@ -113,7 +120,7 @@ const Header = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -50 }}
           >
-            <li className='w-full text-[30px] py-5 text-center hover:bg-cyan-500 ease-out duration-200'>
+            <li className='w-full text-[30px] py-5 text-center hover:bg-primary ease-out duration-200'>
               <Link
                 to='about'
                 activeClass='text-secondary'
@@ -127,7 +134,7 @@ const Header = () => {
                 About
               </Link>
             </li>
-            <li className='w-full text-[30px] py-5 text-center hover:bg-cyan-500 ease-out duration-200'>
+            <li className='w-full text-[30px] py-5 text-center hover:bg-primary ease-out duration-200'>
               <Link
                 to='services'
                 spy={true}
@@ -141,7 +148,7 @@ const Header = () => {
                 Services
               </Link>
             </li>
-            <li className='w-full text-[30px] py-5 text-center hover:bg-cyan-500 ease-out duration-200'>
+            <li className='w-full text-[30px] py-5 text-center hover:bg-primary ease-out duration-200'>
               <Link
                 to='products'
                 ignoreCancelEvents={true}
@@ -155,7 +162,7 @@ const Header = () => {
                 Products
               </Link>
             </li>
-            <li className='w-full text-[30px] py-5 text-center hover:bg-cyan-500 ease-out duration-200'>
+            <li className='w-full text-[30px] py-5 text-center hover:bg-primary ease-out duration-200'>
               <Link
                 to='contact'
                 activeClass='text-secondary'
