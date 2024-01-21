@@ -112,7 +112,7 @@ const ContactForm = () => {
       onSubmit={formSubmissionHandler}
     >
       <h3 className='text-textColor font-bold mb-[20px] text-[24px]'>
-        Let's Connect
+        {`Let's Connect`}
       </h3>
       {error === true && (
         <div className='w-full mb-[20px]'>
