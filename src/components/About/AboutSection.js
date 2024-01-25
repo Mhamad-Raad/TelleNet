@@ -20,7 +20,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section className='w-full'>
+    <section className='w-full overflow-hidden'>
       <Element
         className='flex flex-col gap-[10px] items-center'
         id='about'

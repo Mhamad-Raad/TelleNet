@@ -69,7 +69,7 @@ const GlobeModule = ({ textIsInView }) => {
         pathPoints='coords'
         pathPointLat={(p) => p[1]}
         pathPointLng={(p) => p[0]}
-        pathColor={(path) => path.properties.color}
+        pathColor={(path) => '#84c0df'}
         pathLabel={(path) => path.properties.name}
         pathDashLength={0.1}
         pathDashGap={0.008}
@@ -77,6 +77,7 @@ const GlobeModule = ({ textIsInView }) => {
         onGlobeReady={() => setGlobeReady(true)}
         animateIn={false}
         ref={globeRef}
+        backgroundColor='#0d1115'
       />
     </div>
   );

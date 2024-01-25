@@ -1,7 +1,5 @@
 'use client';
 
-import { Element } from 'react-scroll';
-import { motion } from 'framer-motion';
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
@@ -9,7 +7,7 @@ import { MdDoneOutline } from 'react-icons/md';
 
 import './style.css';
 
-const ContactForm = () => {
+const ContactForm = ({ inView }) => {
   const [validEmail, setValidEmail] = useState(true);
   const [validName, setValidName] = useState(true);
   const [validText, setValidateText] = useState(true);
@@ -103,12 +101,17 @@ const ContactForm = () => {
 
   const error = !validEmail || !validName || !validText;
   return (
-    <motion.form
+    <form
       ref={form}
       autoComplete='off'
-      className={`phone:w-full laptop:w-1/2 flex flex-col items-center justify-center border rounded-xl border-primary bg-[#0b1825] p-[20px] backdrop-opacity-10 max-w-[750px] ${
+      className={`w-full flex flex-col items-center justify-center border rounded-xl border-primary bg-[#0b1825] p-[20px] backdrop-opacity-10 max-w-[750px] ${
         validText ? '' : 'error'
       }`}
+      style={{
+        transform: inView ? 'none' : 'translateX(100px)',
+        opacity: inView ? 1 : 0,
+        transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+      }}
       onSubmit={formSubmissionHandler}
     >
       <h3 className='text-textColor font-bold mb-[20px] text-[24px]'>
@@ -205,7 +208,7 @@ const ContactForm = () => {
           Oops!!! Please try again later!
         </button>
       )}
-    </motion.form>
+    </form>
   );
 };
 
