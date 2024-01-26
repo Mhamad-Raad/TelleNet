@@ -31,7 +31,7 @@ const AboutSection = () => {
         </h2>
         <LineSeperator />
         <p
-          className='text-center mt-10 phone:px-5 tablet:px-10 text-[18px]'
+          className='text-center my-10 phone:px-5 tablet:px-10 text-[18px]'
           style={{
             transform: textIsInView ? 'none' : 'translateX(-200px)',
             opacity: textIsInView ? 1 : 0,
@@ -45,7 +45,7 @@ const AboutSection = () => {
         </p>
         <Globe textIsInView={textIsInView} />
         <motion.p
-          className={`phone:text-justify tablet:text-center phone:px-5 tablet:px-10 overflow-hidden text-[18px]`}
+          className={`phone:text-justify tablet:text-center phone:px-5 tablet:px-10 overflow-hidden text-[18px] mt-8`}
           animate={{
             height: showText ? '100%' : '112px',
           }}

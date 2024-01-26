@@ -43,7 +43,7 @@ const GlobeModule = ({ textIsInView }) => {
       {
         lat: 39.609913,
         lng: -105.962477,
-        altitude: 3,
+        altitude: 1.75,
       },
       startTime
     );
@@ -65,6 +65,8 @@ const GlobeModule = ({ textIsInView }) => {
         <b>${d.ADMIN} (${d.ISO_A2})</b> <br />
         Population: <i>${d.POP_EST}</i>
       `}
+        width={7500}
+        height={500}
         pathsData={cablePaths}
         pathPoints='coords'
         pathPointLat={(p) => p[1]}
