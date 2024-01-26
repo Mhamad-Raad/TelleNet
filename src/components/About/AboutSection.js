@@ -43,7 +43,16 @@ const AboutSection = () => {
           business needs, From cybersecurity to software development, trust our
           experts to enhance your digital world.
         </p>
-        <Globe textIsInView={textIsInView} />
+        <motion.div className='hover:cursor-grab focus:cursor-grabbing'
+          style={{
+            transform: textIsInView ? 'none' : 'translateY(-200px)',
+            opacity: textIsInView ? 1 : 0,
+            transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+          }}
+        >
+          <Globe />
+        </motion.div>
+
         <motion.p
           className={`phone:text-justify tablet:text-center phone:px-5 tablet:px-10 overflow-hidden text-[18px] mt-8`}
           animate={{

@@ -1,11 +1,9 @@
 import Globe from 'react-globe.gl';
 import { useEffect, useState, useRef } from 'react';
-import { OrbitControls } from '@react-three/drei';
 
-const GlobeModule = ({ textIsInView }) => {
+const GlobeModule = () => {
   const [countries, setCountries] = useState({ features: [] });
   const [cablePaths, setCablePaths] = useState([]);
-  const [globeReady, setGlobeReady] = useState(false);
   const globeRef = useRef();
 
   const startTime = 1000;
@@ -54,7 +52,6 @@ const GlobeModule = ({ textIsInView }) => {
   }, []);
 
   return (
-    <div className='hover:cursor-grab focus:cursor-grabbing'>
       <Globe
         hexPolygonsData={countries.features}
         hexPolygonResolution={3}
@@ -76,12 +73,10 @@ const GlobeModule = ({ textIsInView }) => {
         pathDashLength={0.1}
         pathDashGap={0.008}
         pathDashAnimateTime={12000}
-        onGlobeReady={() => setGlobeReady(true)}
         animateIn={false}
         ref={globeRef}
         backgroundColor='#0d1115'
       />
-    </div>
   );
 };
 

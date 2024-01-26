@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.12.1",
-    "@react-three/drei": "^9.96.1",
     "@tailwindcss/line-clamp": "^0.4.4",
     "cobe": "^0.6.3",
     "framer-motion": "^10.17.9",
