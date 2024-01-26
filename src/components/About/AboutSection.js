@@ -1,12 +1,18 @@
 'use client';
 import { useState, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import dynamic from 'next/dynamic';
 
 import LineSeperator from '.././UI/LineSeperator';
-import Globe from '../UI/Globe';
+const DynamicGlobe = dynamic(() => import('../UI/Globe'), {
+  ssr: false,
+  loading: () => <p>loading...</p>
+});
 
 import './AboutSection.css';
 import { Element } from 'react-scroll';
+
+
 
 const AboutSection = () => {
   const [showText, setShowText] = useState(false);
@@ -20,7 +26,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section className='w-full'>
+    <section className='w-full overflow-hidden'>
       <Element
         className='flex flex-col gap-[10px] items-center'
         id='about'
@@ -31,7 +37,7 @@ const AboutSection = () => {
         </h2>
         <LineSeperator />
         <p
-          className='text-center mt-10 phone:px-5 tablet:px-10 text-[18px]'
+          className='text-center my-10 phone:px-5 tablet:px-10 text-[18px]'
           style={{
             transform: textIsInView ? 'none' : 'translateX(-200px)',
             opacity: textIsInView ? 1 : 0,
@@ -43,9 +49,19 @@ const AboutSection = () => {
           business needs, From cybersecurity to software development, trust our
           experts to enhance your digital world.
         </p>
-        <Globe textIsInView={textIsInView} />
+        <motion.div
+          className='hover:cursor-grab focus:cursor-grabbing'
+          style={{
+            transform: textIsInView ? 'none' : 'translateY(-200px)',
+            opacity: textIsInView ? 1 : 0,
+            transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+          }}
+        >
+          <DynamicGlobe />
+        </motion.div>
+
         <motion.p
-          className={`phone:text-justify tablet:text-center phone:px-5 tablet:px-10 overflow-hidden text-[18px]`}
+          className={`phone:text-justify tablet:text-center phone:px-5 tablet:px-10 overflow-hidden text-[18px] mt-8`}
           animate={{
             height: showText ? '100%' : '112px',
           }}

@@ -1,6 +1,8 @@
 'use client';
 
 import { Element } from 'react-scroll';
+import { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
 
 import ContactForm from './ContactForm';
 import LineSeperator from '.././UI/LineSeperator';
@@ -12,14 +14,24 @@ import { IoLocationOutline } from 'react-icons/io5';
 import './style.css';
 
 const Contact = () => {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true });
+
   return (
-    <section>
+    <section ref={ref}>
       <Element
         name='contact'
         id='contact'
-        className='p-10 flex justify-between items-center gap-20 phone:flex-col laptop:flex-row'
+        className='p-10 flex justify-between items-center gap-20 phone:flex-col laptop:flex-row overflow-hidden'
       >
-        <div className='phone:w-full laptop:w-1/2'>
+        <motion.div
+          className='phone:w-full laptop:w-1/2'
+          style={{
+            transform: inView ? 'none' : 'translateX(-100px)',
+            opacity: inView ? 1 : 0,
+            transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+          }}
+        >
           <h3 className='font-black text-[24px] text-textColor mb-[10px]'>
             Get in Touch with Us
           </h3>
@@ -44,8 +56,11 @@ const Contact = () => {
               </p>
             </div>
           </div>
-        </div>
-        <ContactForm />
+        </motion.div>
+          <div className="phone:w-full laptop:w-1/2">
+
+        <ContactForm inView={inView} />
+          </div>
       </Element>
     </section>
   );

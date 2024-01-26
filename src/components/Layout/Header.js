@@ -134,7 +134,7 @@ const Header = () => {
       <AnimatePresence>
         {showNavbar && (
           <motion.ul
-            className='w-full z-10 font-bold flex flex-col gap-y-2 bg-bgSecondary fixed top-[85px] pt-8'
+            className='w-full z-10 font-bold flex flex-col gap-y-2 bg-bgSecondary fixed top-[100px] pt-8'
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -50 }}

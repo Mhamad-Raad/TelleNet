@@ -25,7 +25,7 @@ const ServiceItem = ({ ImageSrc, Title, Description, animation }) => {
 
     return () =>
       containerRef.current.removeEventListener('mousemove', mouseMoveEvent);
-  }, [containerRef]);
+  }, []);
 
   if (animation === 1) style = 'translateX(-100px)';
   else if (animation === 2) style = 'translateY(-100px)';

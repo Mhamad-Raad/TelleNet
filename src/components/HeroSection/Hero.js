@@ -21,7 +21,7 @@ const Hero = () => {
             opacity: 1,
             x: 0,
           }}
-          className='laptop:text-[68px] computer:text-[98px] tablet:text-[49px] phone:text-[24px] phone:mb-[10px] tablet:mb-0 phone:text-center tablet:text-left tablet:leading-[70px] laptop:leading-[100px] computer:leading-[120px]'
+          className='laptop:text-[68px] computer:text-[98px] tablet:text-[49px] phone:text-[20px] phone:text-center tablet:text-left tablet:leading-[70px] laptop:leading-[100px] computer:leading-[120px]'
         >
           WE ARE
         </motion.h1>
@@ -38,7 +38,7 @@ const Hero = () => {
         >
           CUTTING EDGE SOLUTIONS
         </motion.h3>
-        <div className='flex phone:gap-4 tablet:gap-10 phone:flex-col-reverse tablet:flex-row'>
+        <div className='flex tablet:gap-10 phone:flex-col-reverse tablet:flex-row'>
           <motion.p
             initial={{
               opacity: 0,
@@ -65,7 +65,7 @@ const Hero = () => {
               opacity: 1,
               x: 0,
             }}
-            className='laptop:text-[68px] computer:text-[98px] tablet:text-[49px] phone:text-[32px] phone:text-center tablet:text-left phone:mt-[50px] tablet:mt-0 tablet:leading-[60px] computer:leading-[80px]'
+            className='laptop:text-[68px] computer:text-[98px] tablet:text-[49px] phone:text-[42px] phone:text-center tablet:text-left phone:my-2 tablet:mt-0 tablet:leading-[60px] computer:leading-[80px]'
           >
             TELLENET<sub>PRO</sub>
           </motion.h2>
