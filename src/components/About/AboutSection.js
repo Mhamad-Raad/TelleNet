@@ -1,12 +1,18 @@
 'use client';
 import { useState, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import dynamic from 'next/dynamic';
 
 import LineSeperator from '.././UI/LineSeperator';
-import Globe from '../UI/Globe';
+const DynamicGlobe = dynamic(() => import('../UI/Globe'), {
+  ssr: false,
+  loading: () => <p>loading...</p>
+});
 
 import './AboutSection.css';
 import { Element } from 'react-scroll';
+
+
 
 const AboutSection = () => {
   const [showText, setShowText] = useState(false);
@@ -43,14 +49,15 @@ const AboutSection = () => {
           business needs, From cybersecurity to software development, trust our
           experts to enhance your digital world.
         </p>
-        <motion.div className='hover:cursor-grab focus:cursor-grabbing'
+        <motion.div
+          className='hover:cursor-grab focus:cursor-grabbing'
           style={{
             transform: textIsInView ? 'none' : 'translateY(-200px)',
             opacity: textIsInView ? 1 : 0,
             transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
           }}
         >
-          <Globe />
+          <DynamicGlobe />
         </motion.div>
 
         <motion.p

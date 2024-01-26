@@ -49,35 +49,38 @@ const GlobeModule = () => {
     globeRef.current.controls().autoRotate = true;
     globeRef.current.controls().autoRotateSpeed = 0.9;
     globeRef.current.controls().enablePan = false;
+    globeRef.current.controls().enable;
   }, []);
 
   return (
-      <Globe
-        hexPolygonsData={countries.features}
-        hexPolygonResolution={3}
-        hexPolygonMargin={0.3}
-        hexPolygonUseDots={true}
-        hexPolygonColor={() => '#063868'}
-        hexPolygonLabel={({ properties: d }) => `
+    <Globe
+      hexPolygonsData={countries.features}
+      hexPolygonResolution={3}
+      hexPolygonMargin={0.3}
+      hexPolygonUseDots={true}
+      hexPolygonColor={() => '#063868'}
+      hexPolygonLabel={({ properties: d }) => `
         <b>${d.ADMIN} (${d.ISO_A2})</b> <br />
         Population: <i>${d.POP_EST}</i>
       `}
-        width={7500}
-        height={500}
-        pathsData={cablePaths}
-        pathPoints='coords'
-        pathPointLat={(p) => p[1]}
-        pathPointLng={(p) => p[0]}
-        pathColor={(path) => '#84c0df'}
-        pathLabel={(path) => path.properties.name}
-        pathDashLength={0.1}
-        pathDashGap={0.008}
-        pathDashAnimateTime={12000}
-        animateIn={false}
-        ref={globeRef}
-        backgroundColor='#0d1115'
-      />
+      width={750}
+      height={500}
+      pathsData={cablePaths}
+      pathPoints='coords'
+      pathPointLat={(p) => p[1]}
+      pathPointLng={(p) => p[0]}
+      pathColor={(path) => '#84c0df'}
+      pathLabel={(path) => path.properties.name}
+      pathDashLength={0.1}
+      pathDashGap={0.008}
+      pathDashAnimateTime={12000}
+      animateIn={false}
+      ref={globeRef}
+      backgroundColor='#0d1115'
+    />
   );
 };
+
+
 
 export default GlobeModule;
