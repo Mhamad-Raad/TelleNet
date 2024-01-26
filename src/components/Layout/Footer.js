@@ -1,4 +1,5 @@
-import Link from 'next/link';
+'use client';
+import { Link } from 'react-scroll';
 import Image from 'next/image';
 
 import Logo from '@/assets/Logo.png';
@@ -22,13 +23,24 @@ const Footer = () => {
           <h3 className='font-black text-[22px] text-white tracking-[1px] mb-[3px]'>
             Main
           </h3>
-          <Link href='/' className='text-[#ffffffb2] text-[18px]'>
-            Solutions
+          <Link
+            to='products'
+            ignoreCancelEvents={true}
+            smooth={true}
+            duration={1200}
+            offset={-110}
+            className='text-[#ffffffb2] text-[18px]'
+          >
+            Products
           </Link>
-          <Link href='/' className='text-[#ffffffb2] text-[18px]'>
-            Home
-          </Link>
-          <Link href='/' className='text-[#ffffffb2] text-[18px]'>
+          <Link
+            to='services'
+            ignoreCancelEvents={true}
+            smooth={true}
+            duration={1200}
+            offset={-110}
+            className='text-[#ffffffb2] text-[18px]'
+          >
             Services
           </Link>
         </div>
@@ -36,10 +48,24 @@ const Footer = () => {
           <h3 className='font-black text-[22px] text-white tracking-[1px] mb-[3px]'>
             Company
           </h3>
-          <Link href='/' className='text-[#ffffffb2] text-[18px]'>
+          <Link
+            to='about'
+            ignoreCancelEvents={true}
+            smooth={true}
+            duration={1200}
+            offset={-110}
+            className='text-[#ffffffb2] text-[18px]'
+          >
             About Us
           </Link>
-          <Link href='/' className='text-[#ffffffb2] text-[18px]'>
+          <Link
+            to='contact'
+            ignoreCancelEvents={true}
+            smooth={true}
+            duration={1200}
+            offset={-110}
+            className='text-[#ffffffb2] text-[18px]'
+          >
             Cotact Us
           </Link>
         </div>
@@ -47,9 +73,13 @@ const Footer = () => {
           <h3 className='font-black text-[22px] text-white tracking-[1px] mb-[3px]'>
             Follow Us
           </h3>
-          <Link href='/' className='text-[#ffffffb2] text-[18px]'>
+          <a
+            target='_blank'
+            href='https://www.linkedin.com/in/rabar-marouf-36a30392/'
+            className='text-[#ffffffb2] text-[18px]'
+          >
             LinkedIn
-          </Link>
+          </a>
         </div>
       </div>
       <div className='flex items-center gap-x-[50px]'>
@@ -62,7 +92,6 @@ const Footer = () => {
         <LineSeperator />
       </div>
       <p className='text-center p-10 text-[20px]'>
-        {/* write a copywrite */}
         &copy; 2024 TelleNet. All Rights Reserved.
       </p>
     </footer>

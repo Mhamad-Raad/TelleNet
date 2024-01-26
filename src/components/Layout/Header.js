@@ -94,8 +94,6 @@ const Header = () => {
               ignoreCancelEvents={true}
               smooth={true}
               duration={1200}
-              spy={true}
-              activeClass='text-[#5792fb]'
               offset={-110}
             >
               <span></span>
