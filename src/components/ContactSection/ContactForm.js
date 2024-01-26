@@ -1,6 +1,8 @@
 'use client';
 
 import { useRef, useState } from 'react';
+import { motion } from 'framer-motion';
+
 import emailjs from '@emailjs/browser';
 
 import { MdDoneOutline } from 'react-icons/md';
