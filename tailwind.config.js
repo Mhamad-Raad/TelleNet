@@ -26,6 +26,15 @@ module.exports = {
       secondary: '#84c0df',
       textColor: '#ffffff',
     },
+    fontFamily: {
+      sans: [
+        '"Inter var", sans-serif',
+        {
+          fontFeatureSettings: '"cv11", "ss01"',
+          fontVariationSettings: '"opsz" 32'
+        },
+      ],
+    },
   },
   plugins: [require('@tailwindcss/line-clamp')],
 };
