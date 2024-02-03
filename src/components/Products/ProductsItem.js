@@ -4,7 +4,7 @@ import { useRef } from 'react';
 
 const ProductsItem = ({ ImageSrc, Title, Description, animation }) => {
   const ref = useRef();
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref);
 
   let style = '';
   const containerVariants = {
@@ -26,9 +26,9 @@ const ProductsItem = ({ ImageSrc, Title, Description, animation }) => {
 
   return (
     <motion.div
-      className='p-1 rounded-md bg-gradient-to-br from-bgSecondary from-30% via-primary via-50% to-bgSecondary to-75%'
+      className='p-1 rounded-md bg-gradient-to-br from-bgSecondary from-30% via-primary via-50% to-bgSecondary to-75% overflow-hidden'
       style={{
-        width: animation === 1 ? (isInView ? style : '0') : '100%',
+        width: animation === 1 ? (isInView ? style : '75%') : '100%',
         scale: animation === 2 ? (isInView ? style : '0') : '1',
         opacity: isInView ? 1 : 0,
         transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
