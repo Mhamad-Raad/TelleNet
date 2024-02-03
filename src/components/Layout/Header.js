@@ -47,7 +47,7 @@ const Header = () => {
             TelleNet <sub>Pro</sub>
           </h1>
         </div>
-        <ul className='font-bold laptop:flex laptop:items-center laptop:text-lg laptop:gap-12 phone:hidden'>
+        <ul className='font-bold laptop:flex laptop:items-center laptop:text-lg laptop:gap-12 phone:hidden tracking-[2px]'>
           <li>
             <Link
               to='about'
