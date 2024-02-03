@@ -1,10 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
 a,
 button {
   cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+  font-family: 'Kanit', sans-serif;
+}
+
+p, div, span {
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 /* width */
