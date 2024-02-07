@@ -23,17 +23,21 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 ## Learn More about the project content
 
 ### Hero section
+
 Future ready networks, Tailored for every business
 description: Experience the power of next-Generation connectivity solutions, expertly customized to meet your unique requirements, In today's dynamic business landscape, staying ahead means embracing the future of connectivity. Our tailored solutions are meticulously crafted to address the unique needs of your industry, whether you're a service provider, a mobile operator, a financial institution, or a research network. By leveraging our expertise, you can navigate the complexities of your sector with confidence, knowing that your connectivity infrastructure is optimized for success.
 title of the company
 
 ### About
+
 globe
 description:
 At TeleNetpro, our mission is to empower businesses with advanced connectivity solutions designed to thrive in today's ever-changing digital realm. With a focus on future-proof networks, we specialize in delivering personalized connectivity solutions tailored to meet the specific needs of every industry. Whether you're a service provider, mobile operator, financial institution, or research network, our solutions are meticulously crafted to optimize your connectivity infrastructure for success in your sector. Explore the potential of next-generation connectivity solutions customized to elevate your business efficiency, foster innovation, and drive growth.
 
 ### Domains
+
 Products
+
 1. IP ROUTERS
 Our suite of IP routers encompasses a versatile range of solutions tailored to meet specific networking requirements across various industries. offering multiple routing technologies including IP/MPLS, MPLS-TP, Segment routing, RSVP-TE, FlexE, and supporting a wide range of services such as Ethernet, Layer 2 VPN, Layer 3 VPN, EVPN, Circuit emulation, and XGS-PON. Beginning with our compact CPE customer premises equipment, designed for applications like 4G and 5G Fronthaul, Critical Infrastructure, and Enterprise use, these devices offer hardened high-availability for mission-critical sectors while providing cost-effective solutions for multiservice edge needs.
 
@@ -71,8 +75,8 @@ Type 2 XGS-PON ONTs leverage high data rates of fiber optic transmission to deli
 
 Meanwhile, our type 3 GPON ONTs are engineered to support demanding multigigabit residential and business services, cloud services, and remote work scenarios. With their high-performance capabilities, these ONTs set the standard for industry-leading voice, data, and video capabilities, ensuring that service providers can deliver superior connectivity experiences to their subscribers.
 
-
 ### Solutions
+
 1. Mobile operators MNOs
 With the advent of 5G technology, Mobile Network Operators (MNOs) are ushering in a new era of high-speed connectivity and innovative services, including high-speed gaming, e-health, AR/VR, and IIoT. In response to the growing demands of consumers and businesses for faster speeds, enhanced security, guaranteed performance, improved efficiency, and advanced revenue-generating services, Telenetpro offers a comprehensive suite of solutions tailored to the needs of MNOs. From IP and Optical transport to voice network evolution, analytics, and security, our portfolio caters to global service providers of all sizes, from independent operating companies to tier-one operators.
 
@@ -102,7 +106,6 @@ Our virtual and cloud-native solutions for core networks empower MSOs to achieve
 
 As part of our commitment to delivering high-value services, Telenetpro assists MSOs in optimizing and managing hosted environments as enterprises adopt new technologies and transition to the cloud. Our managed services solutions empower leading service providers to effectively manage their customers' transition to SIP-based real-time communications, driving extraordinary business results. Additionally, our technology enables cable MSOs to monetize the smart home and deliver new triple-play services with mesh Wi-Fi 6, service delivery gateways, and AI-driven network insight. Telenetpro's solutions unlock innovation and support multi-domain service delivery with open, disaggregated SD-access solutions, empowering cable MSOs to thrive in the rapidly evolving digital landscape.
 
-
 4. Utilities UTelcos
 In the realm of utilities, Telenetpro serves as a strategic partner in helping them unlock the potential of their communications network assets and transition into Utelcos. Utilities are increasingly seeking to extract additional value from their existing infrastructure, ranging from co-location of devices to offering wholesale voice, video, internet, and mobile services. Telenetpro offers tailored solutions to support utilities in diversifying their revenue streams while fostering the growth and development of their local communities.
 
@@ -114,9 +117,27 @@ Furthermore, our solutions empower utilities to deliver rural broadband through 
 
 Automation plays a crucial role in streamlining operations and maximizing efficiency. Our multi-layer network visualization tools provide comprehensive insights into Optical and IP layers, while advanced automation capabilities across the full lifecycle enable utilities to monetize their assets without the need to increase staff. Telenetpro's solutions empower utilities to navigate the evolving landscape of communications networks, seize growth opportunities, and deliver value to their stakeholders while ensuring security, reliability, and performance.
 
-
 ### Services
+
 one box with bullet points.
 
+Telenetpro's Comprehensive Service Offerings
+At Telenetpro, we recognize that the successful implementation and sustained operation of cutting-edge communication solutions require more than just innovative technology. Our dedicated services teams are poised to guide you through every step of your network transformation journey, ensuring you leverage the maximum value from your solution. From deployment and integration to ongoing maintenance, monitoring, and education, our holistic approach aligns with your business objectives.
 
+Professional Services for Network Transformation
 
+At Telenetpro Communications, we understand the challenges that service providers and enterprises face in deploying and maintaining IP-based voice, multimedia, and IP Optical communications solutions. Our Professional Services team is dedicated to supporting our industry-leading solutions throughout their lifecycle, from deployment and integration to ongoing maintenance and monitoring.
+
+Expert Deployment Services
+Our deployment services encompass end-to-end support to ensure your network reaches its full potential. Whether you're planning a network expansion project, upgrading hardware and software, or executing program-specific deployments, our team of experts provides seamless project management and logistics support to oversee every aspect of the deployment process.
+
+Tailored Network Modernization
+As a recognized global leader in Network Transformation, we offer tailored network modernization services to help you accelerate your return on investment, optimize operational capability, and enhance network performance and health. From planning and design to deployment and integration, we provide customized solutions to meet your specific needs and goals.
+
+Maintenance Support
+Our Maintenance Support services offer proactive monitoring to keep your production communications running smoothly, allowing you to focus on running your business. With a comprehensive support strategy for all products, applications, and solutions purchased, we ensure that any issues are identified, addressed, and rectified quickly, providing you with peace of mind and confidence in your network infrastructure.
+
+Professional Consulting and Education Services
+We provide consulting and education services to help you transform your business, improve processes, and streamline operations. Our team of experts works closely with you to turn your network goals into actionable plans, while our education services ensure that you have the technical knowledge and skills necessary to achieve service readiness and delivery goals, accelerating time-to-market and maximizing the value of your products and solutions.
+
+With a global presence and unmatched core competencies in broadband solutions and services, Telenetpro Communications is your trusted partner for network transformation. Whether you're looking to deploy new technologies, upgrade existing infrastructure, or optimize network performance, our comprehensive range of Professional Services is designed to meet your needs and drive your success.
