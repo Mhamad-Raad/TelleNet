@@ -7,6 +7,8 @@ import Lights from './Lights';
 
 import './hero.css';
 
+// Future ready networks, Tailored for every business
+
 const Hero = () => {
   return (
     <section className='flex flex-col w-full items-center justify-center phone:py-[25px] tablet:py-0 relative overflow-hidden'>
@@ -21,9 +23,9 @@ const Hero = () => {
             opacity: 1,
             x: 0,
           }}
-          className='laptop:text-[68px] computer:text-[98px] tablet:text-[49px] phone:text-[20px] phone:text-center tablet:text-left tablet:leading-[70px] laptop:leading-[100px] computer:leading-[120px]'
+          className='laptop:text-[64px] computer:text-[92px] tablet:text-[49px] phone:text-[20px] phone:text-center tablet:text-left tablet:leading-[70px] laptop:leading-[80px] computer:leading-[120px]'
         >
-          WE ARE
+          FUTURE READY NETWORKS
         </motion.h1>
         <motion.h3
           initial={{
@@ -34,11 +36,11 @@ const Hero = () => {
             opacity: 1,
             x: 0,
           }}
-          className='laptop:text-[68px] computer:text-[98px] tablet:text-[49px] phone:text-[20px] phone:text-center tablet:text-left tablet:leading-[70px] laptop:leading-[100px] computer:leading-[120px]'
+          className='laptop:text-[64px] computer:text-[92px] tablet:text-[49px] phone:text-[20px] phone:text-center tablet:text-left tablet:leading-[70px] laptop:leading-[80px] computer:leading-[120px]'
         >
-          CUTTING EDGE SOLUTIONS
+          TAILORED FOR EVERY BUSINESS
         </motion.h3>
-        <div className='flex tablet:gap-10 phone:flex-col-reverse tablet:flex-row'>
+        <div className='flex tablet:gap-10 phone:flex-col-reverse tablet:flex-row tablet:mt-5'>
           <motion.p
             initial={{
               opacity: 0,
@@ -50,11 +52,13 @@ const Hero = () => {
             }}
             className='phone:w-full tablet:w-1/2 phone:text-center tablet:text-justify laptop:text-[20px]'
           >
-            We are a team of professionals that can provide you with the best
-            solutions for your business. We are here to help you grow and
-            improve your business. Our solutions are fast, reliable and secure.
-            We are here to help you grow and improve your business. Our
-            solutions are fast, reliable and secure.
+            Harness the power of next-gen connectivity solutions, tailored to
+            your needs. In today's dynamic business landscape, staying ahead
+            means embracing the future of connectivity. Our solutions are
+            crafted to fit your industry—be it service providers, mobile
+            operators, financial institutions, or research networks. With our
+            expertise, navigate your sector confidently, knowing your
+            connectivity is optimized for success.
           </motion.p>
           <motion.h2
             initial={{
