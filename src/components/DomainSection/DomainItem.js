@@ -4,7 +4,7 @@ import { motion, useInView } from 'framer-motion';
 
 import './style.css';
 
-const ServiceItem = ({ ImageSrc, Title, Description, animation }) => {
+const DomainItem = ({ ImageSrc, Title, Description, animation }) => {
   const containerRef = useRef(null);
   const animationRef = useRef();
 
@@ -33,7 +33,7 @@ const ServiceItem = ({ ImageSrc, Title, Description, animation }) => {
 
   return (
     <motion.div
-      className='phone:max-w-[275px] computer:max-w-[400px] p-1 rounded-md service'
+      className='phone:max-w-[275px] computer:max-w-[400px] p-1 rounded-md domain'
       ref={animationRef}
       style={{
         transform: isInView ? 'none' : style,
@@ -61,4 +61,4 @@ const ServiceItem = ({ ImageSrc, Title, Description, animation }) => {
   );
 };
 
-export default ServiceItem;
+export default DomainItem;

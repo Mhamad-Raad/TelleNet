@@ -4,8 +4,8 @@ import { Element } from 'react-scroll';
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
-import ServiceItem from './ServiceItem';
-import LineSeperator from '.././UI/LineSeperator';
+import DomainItem from './DomainItem';
+import LineSeperator from '../UI/LineSeperator';
 
 import Layer from '@/assets/layer.png';
 
@@ -38,21 +38,21 @@ const AboutSection = () => {
           and expert guidance.`}
         </motion.p>
         <div className='flex flex-wrap items-center justify-center gap-10 mt-16 phone:px-4'>
-          <ServiceItem
+          <DomainItem
             ImageSrc={Layer}
             Title='Composition'
             Description="NetSpot's solutions let you build a flexible and adaptable business
           with unmatched agility and efficiency."
             animation={1}
           />
-          <ServiceItem
+          <DomainItem
             ImageSrc={Layer}
             Title='Composition'
             Description="NetSpot's solutions let you build a flexible and adaptable business
           with unmatched agility and efficiency."
             animation={2}
           />
-          <ServiceItem
+          <DomainItem
             ImageSrc={Layer}
             Title='Composition'
             Description="NetSpot's solutions let you build a flexible and adaptable business

@@ -1,6 +1,6 @@
 import Hero from '../components/HeroSection/Hero';
 import AboutSection from '@/components/About/AboutSection';
-import ServicesSection from '@/components/ServiceSection/ServicesSection';
+import ServicesSection from '@/components/DomainSection/DomainSection';
 import ProductsList from '@/components/Products/ProductsList';
 import Contact from '@/components/ContactSection/ContactSection';
 
