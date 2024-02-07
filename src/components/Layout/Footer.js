@@ -13,11 +13,11 @@ const Footer = () => {
       <div className='flex justify-between items-ceneter py-[40px] px-[16px] flex-wrap gap-[50px]'>
         <div className='flex justify-center items-center gap-[20px]'>
           <Image
-            alt='TelleNet Logo'
+            alt='TeleNet Logo'
             src={Logo}
             className='rounded-full laptop:ml-2 laptop:w-[65px] phone:w-[50px]'
           />
-          <h3 className='font-black text-[28px]'>TELLENET</h3>
+          <h3 className='font-black text-[28px]'>TELENET</h3>
         </div>
         <div className='flex flex-col gap-y-[3px]'>
           <h3 className='font-black text-[22px] text-white tracking-[1px] mb-[3px]'>
@@ -85,14 +85,14 @@ const Footer = () => {
       <div className='flex items-center gap-x-[50px]'>
         <LineSeperator />
         <Image
-          alt='TelleNet Logo'
+          alt='TeleNet Logo'
           src={Logo}
           className='rounded-full w-[65px]'
         />
         <LineSeperator />
       </div>
       <p className='text-center p-10 text-[20px]'>
-        &copy; 2024 TelleNet. All Rights Reserved.
+        &copy; 2024 TeleNet. All Rights Reserved.
       </p>
     </footer>
   );

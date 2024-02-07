@@ -73,7 +73,7 @@ const AboutSection = () => {
           }}
         >
           <span className='font-bold'>
-            TelleNet <sub>Pro</sub>
+            TeleNet <sub>Pro</sub>
           </span>{' '}
           is guided by four principles: customer obsession rather than
           competitor focus, passion for invention, commitment to operational

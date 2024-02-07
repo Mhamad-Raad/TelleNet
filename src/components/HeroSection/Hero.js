@@ -67,7 +67,7 @@ const Hero = () => {
             }}
             className='laptop:text-[68px] computer:text-[98px] tablet:text-[49px] phone:text-[42px] phone:text-center tablet:text-left phone:my-2 tablet:mt-0 tablet:leading-[60px] computer:leading-[80px]'
           >
-            TELLENET<sub>PRO</sub>
+            TELENET<sub>PRO</sub>
           </motion.h2>
         </div>
       </div>
