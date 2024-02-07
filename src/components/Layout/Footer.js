@@ -34,14 +34,14 @@ const Footer = () => {
             Products
           </Link>
           <Link
-            to='services'
+            to='domains'
             ignoreCancelEvents={true}
             smooth={true}
             duration={1200}
             offset={-110}
             className='text-[#ffffffb2] text-[18px]'
           >
-            Services
+            Domains
           </Link>
         </div>
         <div className='flex flex-col gap-y-[3px]'>

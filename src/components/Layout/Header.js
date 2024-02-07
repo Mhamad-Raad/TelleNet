@@ -63,7 +63,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              to='services'
+              to='domains'
               spy={true}
               activeClass='text-[#5792fb]'
               ignoreCancelEvents={true}
@@ -71,7 +71,7 @@ const Header = () => {
               duration={1200}
               offset={-110}
             >
-              Services
+              Domains
             </Link>
           </li>
           <li>

@@ -16,8 +16,8 @@ const AboutSection = () => {
   return (
     <section className='w-full overflow-hidden'>
       <Element
-        name='services'
-        id='services'
+        name='domains'
+        id='domains'
         className='flex flex-col gap-[10px]'
       >
         <h2 className='text-textColor text-[28px] font-black text-center'>
