@@ -8,7 +8,6 @@ import LineSeperator from '../UI/LineSeperator';
 import Domains from './Domains';
 
 const DomainSection = () => {
-  console.log(Domains);
   return (
     <section className='w-full overflow-hidden'>
       <Element name='domains' id='domains' className='flex flex-col gap-[10px]'>
