@@ -5,9 +5,10 @@ import { Element } from 'react-scroll';
 import DomainItem from './DomainItem';
 import LineSeperator from '../UI/LineSeperator';
 
-import Layer from '@/assets/layer.png';
+import Domains from './Domains';
 
-const AboutSection = () => {
+const DomainSection = () => {
+  console.log(Domains);
   return (
     <section className='w-full overflow-hidden'>
       <Element name='domains' id='domains' className='flex flex-col gap-[10px]'>
@@ -16,31 +17,17 @@ const AboutSection = () => {
         </h2>
         <LineSeperator />
         <div className='flex flex-wrap items-center justify-center gap-10 mt-16 phone:px-4'>
-          <DomainItem
-            ImageSrc={Layer}
-            Title='Service Providers'
-            Description="NetSpot's solutions let you build a flexible and adaptable business
-          with unmatched agility and efficiency."
-            animation={1}
-          />
-          <DomainItem
-            ImageSrc={Layer}
-            Title='Enterprises'
-            Description="NetSpot's solutions let you build a flexible and adaptable business
-          with unmatched agility and efficiency."
-            animation={2}
-          />
-          <DomainItem
-            ImageSrc={Layer}
-            Title='Composition'
-            Description="NetSpot's solutions let you build a flexible and adaptable business
-          with unmatched agility and efficiency."
-            animation={3}
-          />
+          {Domains.map((domain, i) => (
+            <DomainItem
+              key={i}
+              Domain={domain}
+              Description="NetSpot's solutions let you build a flexible and adaptable business"
+            />
+          ))}
         </div>
       </Element>
     </section>
   );
 };
 
-export default AboutSection;
+export default DomainSection;

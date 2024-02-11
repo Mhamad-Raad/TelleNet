@@ -1,6 +1,9 @@
+import Layer from '@/assets/layer.png';
+
 const Domains = [
   {
     title: 'Service Provioders',
+    img: Layer,
     sections: [
       {
         Icon: '',
@@ -18,6 +21,7 @@ const Domains = [
   },
   {
     title: 'Enterprises',
+    img: Layer,
     sections: [
       {
         Icon: '',
@@ -39,6 +43,7 @@ const Domains = [
   },
   {
     title: 'Utilities UTelcos',
+    img: Layer,
     sections: [
       {
         Icon: '',
@@ -52,6 +57,9 @@ const Domains = [
   },
   {
     title: 'Critical Infrastructure',
+    img: Layer,
     sections: [],
   },
 ];
+
+export default Domains;
