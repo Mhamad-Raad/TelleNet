@@ -20,7 +20,7 @@ const DomainSection = () => {
             <DomainItem
               key={i}
               Domain={domain}
-              Description="NetSpot's solutions let you build a flexible and adaptable business"
+              animation={i}
             />
           ))}
         </div>

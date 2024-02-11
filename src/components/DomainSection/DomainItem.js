@@ -4,7 +4,7 @@ import { motion, useInView } from 'framer-motion';
 
 import './style.css';
 
-const DomainItem = ({ Domain, Description, animation }) => {
+const DomainItem = ({ Domain, animation }) => {
   const containerRef = useRef(null);
   const animationRef = useRef();
 
@@ -27,8 +27,9 @@ const DomainItem = ({ Domain, Description, animation }) => {
       containerRef.current.removeEventListener('mousemove', mouseMoveEvent);
   }, []);
 
-  if (animation === 1) style = 'translateX(-100px)';
-  else if (animation === 2) style = 'translateY(-100px)';
+  if (animation === 0) style = 'translateX(-100px)';
+  else if (animation === 1) style = 'translateY(-100px)';
+  else if (animation === 2) style = 'translateY(100px)';
   else style = 'translateX(100px)';
 
   return (
