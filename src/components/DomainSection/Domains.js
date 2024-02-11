@@ -6,15 +6,15 @@ const Domains = [
     img: Layer,
     sections: [
       {
-        Icon: '',
+        Icon: Layer,
         title: 'Mobile Operators',
       },
       {
-        Icon: '',
+        Icon: Layer,
         title: 'Broadband ISPs',
       },
       {
-        Icon: '',
+        Icon: Layer,
         title: '⁠Cable Operators MSOs',
       },
     ],
@@ -24,19 +24,19 @@ const Domains = [
     img: Layer,
     sections: [
       {
-        Icon: '',
+        Icon: Layer,
         title: 'Research & Education Networks',
       },
       {
-        Icon: '',
+        Icon: Layer,
         title: 'Healthcare',
       },
       {
-        Icon: '',
+        Icon: Layer,
         title: 'Financials',
       },
       {
-        Icon: '',
+        Icon: Layer,
         title: 'Data Center Xs',
       },
     ],
@@ -46,11 +46,11 @@ const Domains = [
     img: Layer,
     sections: [
       {
-        Icon: '',
+        Icon: Layer,
         title: 'Power Grid, Water, Oil, Gas & Solars',
       },
       {
-        Icon: '',
+        Icon: Layer,
         title: 'X/Private Industries',
       },
     ],

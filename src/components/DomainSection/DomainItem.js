@@ -33,7 +33,7 @@ const DomainItem = ({ Domain, Description, animation }) => {
 
   return (
     <motion.div
-      className='phone:max-w-[275px] computer:max-w-[400px] p-1 rounded-md domain'
+      className='phone:max-w-[275px] phone:w-full laptop:max-w-[240px] phone:h-[400px] laptop:h-[375px] computer:max-w-[400px] p-1 rounded-md domain'
       ref={animationRef}
       style={{
         transform: isInView ? 'none' : style,
@@ -47,15 +47,20 @@ const DomainItem = ({ Domain, Description, animation }) => {
       >
         <Image
           src={Domain.img}
-          className='phone:w-[150px] phone:h-[150px] computer:w-[175px] computer:h-[175px]'
+          className='phone:w-[140px] phone:h-[140px] computer:w-[175px] computer:h-[175px]'
           alt=''
         />
         <h3 className='phone:text-[18px] computer:text-[22px] mt-4 font-black text-[#4d7ca8] text-center'>
           {Domain.title}
         </h3>
-        <p className='phone:text-[16px] computer:text-[18px] text-center text-[#698097] phone:leading-[20px] computer:leading-[24px] computer:mt-4'>
-          {Description}
-        </p>
+        <div className='phone:text-[16px] computer:text-[18px] text-[#698097] phone:leading-[20px] computer:leading-[24px] computer:mt-4 flex flex-col align-center justify-center'>
+          {Domain.sections.map((section, i) => (
+            <div className='flex justify-between align-center' key={i}>
+              <Image src={section.Icon} alt='' width={20} height={20} />
+              <p>{section.title}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </motion.div>
   );
