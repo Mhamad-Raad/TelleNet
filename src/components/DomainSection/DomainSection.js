@@ -18,14 +18,14 @@ const AboutSection = () => {
         <div className='flex flex-wrap items-center justify-center gap-10 mt-16 phone:px-4'>
           <DomainItem
             ImageSrc={Layer}
-            Title='Composition'
+            Title='Service Providers'
             Description="NetSpot's solutions let you build a flexible and adaptable business
           with unmatched agility and efficiency."
             animation={1}
           />
           <DomainItem
             ImageSrc={Layer}
-            Title='Composition'
+            Title='Enterprises'
             Description="NetSpot's solutions let you build a flexible and adaptable business
           with unmatched agility and efficiency."
             animation={2}
