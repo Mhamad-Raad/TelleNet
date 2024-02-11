@@ -34,9 +34,7 @@ globe
 description:
 At TeleNetpro, our mission is to empower businesses with advanced connectivity solutions designed to thrive in today's ever-changing digital realm. With a focus on future-proof networks, we specialize in delivering personalized connectivity solutions tailored to meet the specific needs of every industry. Whether you're a service provider, mobile operator, financial institution, or research network, our solutions are meticulously crafted to optimize your connectivity infrastructure for success in your sector. Explore the potential of next-generation connectivity solutions customized to elevate your business efficiency, foster innovation, and drive growth.
 
-### Domains
-
-Products
+### scrollable Products
 
 1. IP ROUTERS
    Our suite of IP routers encompasses a versatile range of solutions tailored to meet specific networking requirements across various industries. offering multiple routing technologies including IP/MPLS, MPLS-TP, Segment routing, RSVP-TE, FlexE, and supporting a wide range of services such as Ethernet, Layer 2 VPN, Layer 3 VPN, EVPN, Circuit emulation, and XGS-PON. Beginning with our compact CPE customer premises equipment, designed for applications like 4G and 5G Fronthaul, Critical Infrastructure, and Enterprise use, these devices offer hardened high-availability for mission-critical sectors while providing cost-effective solutions for multiservice edge needs.
@@ -114,7 +112,7 @@ Gen4 emerges as a transformative solution in the realm of coherent pluggable tec
 
 10. Telenetpro offers a diverse range of standardized and customized transceivers, including Dual fiber/ Single fiber (BIDI)/ CWDM/ DWDM / PON/ PHY(SGMII) of QSFP28/ CFP4/ CFP2/ CFP/ QSFP+/ SFP28/ SFP+/ XFP/ X2/ Xenpak/ CSFP/ GBIC/ GBIC Copper/ SFP/ SFP Copper/ SFF/ 1 x 9, catering to various data rates from 100G to 100Mbps for networks. These transceivers operate across different wavelengths such as 850nm/ 1310nm/ 1490nm/ 1550nm/ CWDM 1270 - 1610nm/ DWDM, with transmitting distances ranging from 30m up to 150km. They feature Digital Diagnostic Function and support a wide range of operating temperatures, including Standard: 0~+70°C; Extended: -20~+85°C; Industrial: -40~+85°C. Compliant with RoHS standards, these transceivers ensure 100% compatibility with equipment from leading vendors, making them versatile solutions for diverse network environments.
 
-### Solutions
+### Solutions products
 
 1. Mobile operators MNOs
    With the advent of 5G technology, Mobile Network Operators (MNOs) are ushering in a new era of high-speed connectivity and innovative services, including high-speed gaming, e-health, AR/VR, and IIoT. In response to the growing demands of consumers and businesses for faster speeds, enhanced security, guaranteed performance, improved efficiency, and advanced revenue-generating services, Telenetpro offers a comprehensive suite of solutions tailored to the needs of MNOs. From IP and Optical transport to voice network evolution, analytics, and security, our portfolio caters to global service providers of all sizes, from independent operating companies to tier-one operators.

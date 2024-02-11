@@ -52,13 +52,13 @@ const Hero = () => {
             }}
             className='phone:w-full tablet:w-1/2 phone:text-center tablet:text-justify laptop:text-[20px]'
           >
-            Harness the power of next-gen connectivity solutions, tailored to
+           {` Harness the power of next-gen connectivity solutions, tailored to
             your needs. In today's dynamic business landscape, staying ahead
             means embracing the future of connectivity. Our solutions are
             crafted to fit your industry—be it service providers, mobile
             operators, financial institutions, or research networks. With our
             expertise, navigate your sector confidently, knowing your
-            connectivity is optimized for success.
+            connectivity is optimized for success.`}
           </motion.p>
           <motion.h2
             initial={{
