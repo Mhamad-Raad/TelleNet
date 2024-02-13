@@ -12,6 +12,7 @@ import 'swiper/css/navigation';
 import Layers from '@/assets/layer.png';
 
 const ProductsList = () => {
+  console.log(Products);
   return (
     <div className='border border-[] w-[90%] h-[750px] p-12'>
       <h2 className='text-center'>IP ROUTERS</h2>
