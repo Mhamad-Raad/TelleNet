@@ -1,7 +1,7 @@
 import Hero from '../components/HeroSection/Hero';
 import AboutSection from '@/components/About/AboutSection';
 import ServicesSection from '@/components/DomainSection/DomainSection';
-import ProductsList from '@/components/Products/ProductsList';
+import ProductsSection from '@/components/Products/ProductsSection';
 import Contact from '@/components/ContactSection/ContactSection';
 
 const Home = () => {
@@ -10,7 +10,7 @@ const Home = () => {
       <Hero />
       <AboutSection />
       <ServicesSection />
-      <ProductsList />
+      <ProductsSection />
       <Contact />
     </main>
   );
