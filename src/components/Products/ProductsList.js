@@ -23,8 +23,10 @@ const ProductsList = () => {
         className='flex flex-col gap-20 items-center'
       >
         <div className='border border-[] w-[90%] h-[750px] p-12'>
-          <h2 className='text-center'>Product title</h2>
-          <p className='text-center'>something long here</p>
+          <h2 className='text-center'>IP ROUTERS</h2>
+          <p className='text-center'>
+            Our suite of IP routers encompasses a versatile range of solutions tailored to meet specific networking requirements across various industries. offering multiple routing technologies including IP/MPLS, MPLS-TP, Segment routing, RSVP-TE, FlexE, and supporting a wide range of services such as Ethernet, Layer 2 VPN, Layer 3 VPN, EVPN, Circuit emulation, and XGS-PON. Beginning with our compact CPE customer premises equipment, designed for applications like 4G and 5G Fronthaul, Critical Infrastructure, and Enterprise use, these devices offer hardened high-availability for mission-critical sectors while providing cost-effective solutions for multiservice edge needs.
+          </p>
           <Swiper
             spaceBetween={30}
             centeredSlides={true}
