@@ -15,7 +15,7 @@ const ProductsList = () => {
     return (
       <div
         key={index}
-        className='border bg-[#0a1622] w-full phone:p-4 laptop:p-12 rounded-3xl border-bgSecondary'
+        className='border bg-[#0a1622] w-full phone:p-4 laptop:p-12 laptop:pb-5 rounded-3xl border-bgSecondary'
       >
         <h2 className='text-center text-[#5792fb] phone:text-[18px] laptop:text-[24px] computer:text-[28px] font-bold phone:mb-2 laptop:mb-5'>
           {product.title}

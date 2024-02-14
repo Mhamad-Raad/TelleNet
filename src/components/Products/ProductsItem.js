@@ -26,7 +26,7 @@ const ProductsItem = ({ ImageSrc, Title, Description, animation }) => {
 
   return (
     <motion.div
-      className='p-1 rounded-md bg-gradient-to-br from-bgSecondary from-30% via-primary via-50% to-bgSecondary to-75% overflow-hidden laptop:h-[400px] mb-6'
+      className='p-1 rounded-md bg-gradient-to-br from-bgSecondary from-30% via-primary via-50% to-bgSecondary to-75% overflow-hidden laptop:h-[400px] mb-12'
       style={{
         width: animation === 1 ? (isInView ? style : '75%') : '100%',
         scale: animation === 2 ? (isInView ? style : '0') : '1',
