@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 
 import ProductsItem from './ProductsItem';
 
@@ -7,7 +7,8 @@ import Products from './products';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+
+import './style.css';
 
 const ProductsList = () => {
   console.log(Products);
@@ -27,14 +28,13 @@ const ProductsList = () => {
           spaceBetween={30}
           centeredSlides={true}
           autoplay={{
-            delay: 2500,
+            delay: 5500,
             disableOnInteraction: false,
           }}
           pagination={{
             clickable: true,
           }}
-          navigation={true}
-          modules={[Autoplay, Pagination, Navigation]}
+          modules={[Autoplay, Pagination]}
           className='mySwiper'
         >
           {product.types.map((type, index) => {
@@ -45,7 +45,7 @@ const ProductsList = () => {
                     ImageSrc={type.image}
                     Title={type.title}
                     Description={type.description}
-                    animation={3}
+                    animation={5}
                   />
                 </div>
               </SwiperSlide>
