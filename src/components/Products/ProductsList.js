@@ -9,17 +9,18 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import Layers from '@/assets/layer.png';
-
 const ProductsList = () => {
   console.log(Products);
   return Products.map((product, index) => {
     return (
-      <div key={index} className='border bg-[#0a1622] w-full p-12 rounded-3xl border-bgSecondary'>
-        <h2 className='text-center text-[#5792fb] text-[22px] font-bold mb-5'>
+      <div
+        key={index}
+        className='border bg-[#0a1622] w-full phone:p-4 laptop:p-12 rounded-3xl border-bgSecondary'
+      >
+        <h2 className='text-center text-[#5792fb] phone:text-[18px] laptop:text-[24px] computer:text-[28px] font-bold phone:mb-2 laptop:mb-5'>
           {product.title}
         </h2>
-        <p className='text-center text-[16px] text-[#8ea7d3] mb-8'>
+        <p className='text-center phone:text-[13px] laptop:text-[16px] computer:text-[22px] text-[#8ea7d3] mb-8'>
           {product.description}
         </p>
         <Swiper
