@@ -14,9 +14,8 @@ const Solutions = [
     image: Layer,
   },
   {
-    title: 'MSOs',
-    description:
-      'Telenetpro drives MSO growth with forward-looking networks, shifting to 4G/5G mobile and business offerings. We modernize core networks with solutions like unified 5G xHaul, ensuring agile operations amid technological shifts and enabling new revenue streams.',
+    title: 'NSPs & NAPs',
+    description: `Telenetpro transforms the landscape for Network Service Providers (NSPs) and Network Access Point (NAP) providers, addressing bandwidth limitations, network congestion, and infrastructure scalability issues. Our solutions empower NSPs and NAPs to deliver reliable, high-quality services, staying ahead in the rapidly evolving telecommunications industry.`,
     image: Layer,
   },
   {
