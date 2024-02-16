@@ -1,6 +1,8 @@
 import SolutionsList from './SolutionsList';
 import LineSeperator from '../UI/LineSeperator';
 
+
+
 const SolutionsSection = () => {
   return (
     <section className='flex flex-col items-center phone:px-4 laptop:px-8 computer:px-10'>
