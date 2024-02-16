@@ -3,7 +3,7 @@ import { useState, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import dynamic from 'next/dynamic';
 
-import LineSeperator from '.././UI/LineSeperator';
+import LineSeperator from '../UI/LineSeperator';
 const DynamicGlobe = dynamic(() => import('../UI/Globe'), {
   ssr: false,
   loading: () => <p>loading...</p>,
@@ -61,7 +61,7 @@ const AboutSection = () => {
           <span className='font-bold'>
             TeleNet <sub>Pro</sub>
           </span>{' '}
-         {` At TeleNetpro, our mission is to empower businesses with advanced
+          {` At TeleNetpro, our mission is to empower businesses with advanced
           connectivity solutions designed to thrive in today's ever-changing
           digital realm. With a focus on future-proof networks, we specialize in
           delivering personalized connectivity solutions tailored to meet the
@@ -70,7 +70,8 @@ const AboutSection = () => {
           solutions are meticulously crafted to optimize your connectivity
           infrastructure for success in your sector. Explore the potential of
           next-generation connectivity solutions customized to elevate your
-          business efficiency, foster innovation, and drive growth`}.
+          business efficiency, foster innovation, and drive growth`}
+          .
         </motion.p>
         <div
           className='mt-8 rounded-md bg-gradient-to-r from-bgSecondary via-primary to-bgSecondary py-[4px] px-[3px] btn-bg min-[1065px]:hidden'

@@ -1,8 +1,8 @@
 import Hero from '../components/HeroSection/Hero';
-import AboutSection from '@/components/About/AboutSection';
+import AboutSection from '@/components/AboutSection/AboutSection';
 import ServicesSection from '@/components/DomainSection/DomainSection';
-import ProductsSection from '@/components/Products/ProductsSection';
-import SolutionsSection from '@/components/Solutions/SolutionsSection';
+import ProductsSection from '@/components/ProductsSection/ProductsSection';
+import SolutionsSection from '@/components/SolutionsSection/SolutionsSection';
 import Contact from '@/components/ContactSection/ContactSection';
 
 const Home = () => {
