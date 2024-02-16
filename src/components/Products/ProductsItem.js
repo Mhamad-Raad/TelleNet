@@ -1,12 +1,8 @@
 import Image from 'next/image';
-import { motion, useInView } from 'framer-motion';
-import { useRef } from 'react';
+import { motion } from 'framer-motion';
 
-const ProductsItem = ({ ImageSrc, Title, Description, animation }) => {
-  const ref = useRef();
-  const isInView = useInView(ref, { once: true });
+const ProductsItem = ({ ImageSrc, Title, Description }) => {
 
-  let style = '';
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
@@ -17,24 +13,12 @@ const ProductsItem = ({ ImageSrc, Title, Description, animation }) => {
     },
   };
 
-  const imageVariants = {
+  const innerVariant = {
     hover: { scale: 1.1 },
   };
 
-  if (animation === 1) style = '100%';
-  else if (animation === 2) style = '1';
-
   return (
-    <motion.div
-      className='p-1 rounded-md bg-gradient-to-br from-bgSecondary from-30% via-primary via-50% to-bgSecondary to-75% overflow-hidden laptop:h-[400px] mb-12'
-      style={{
-        width: animation === 1 ? (isInView ? style : '75%') : '100%',
-        scale: animation === 2 ? (isInView ? style : '0') : '1',
-        opacity: isInView ? 1 : 0,
-        transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
-      }}
-      ref={ref}
-    >
+    <div className='p-1 rounded-md bg-gradient-to-br from-bgSecondary from-30% via-primary via-50% to-bgSecondary to-75% overflow-hidden laptop:h-[400px] mb-12'>
       <motion.div
         className='rounded-md flex phone:flex-col laptop:flex-row items-center justify-between phone:p-4 tablet:p-10 laptop:p-20 phone:gap-8 transition-all duration-300'
         variants={containerVariants}
@@ -42,17 +26,22 @@ const ProductsItem = ({ ImageSrc, Title, Description, animation }) => {
         animate='visible'
         whileHover='hover'
       >
-        <div className='flex flex-col laptop:w-[60%]'>
+        <motion.div
+          className='flex flex-col laptop:w-[60%]'
+          variants={innerVariant}
+          whileHover='hover'
+          transition={{ duration: 0.3 }}
+        >
           <h4 className='phone:text-[18px] tablet:text-[20px] phone:text-center laptop:text-left computer:text-[28px] phone:mb-1'>
             {Title}
           </h4>
           <p className='phone:text-[13px] tablet:text-[16px] phone:text-center laptop:text-left computer:text-[20px] text-[#7a92b1]'>
             {Description}
           </p>
-        </div>
+        </motion.div>
 
         <motion.div
-          variants={imageVariants}
+          variants={innerVariant}
           whileHover='hover'
           transition={{ duration: 0.3 }}
           className='phone:w-[75%] laptop:w-[30%] computer:w-[20%]'
@@ -60,7 +49,7 @@ const ProductsItem = ({ ImageSrc, Title, Description, animation }) => {
           <Image src={ImageSrc} alt='' className='h-full w-full' />
         </motion.div>
       </motion.div>
-    </motion.div>
+    </div>
   );
 };
 

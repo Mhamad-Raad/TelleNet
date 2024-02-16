@@ -1,5 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
+import { motion, useInView } from 'framer-motion';
+import { useRef } from 'react';
 
 import ProductsItem from './ProductsItem';
 
@@ -11,12 +13,22 @@ import 'swiper/css/pagination';
 import './style.css';
 
 const ProductsList = () => {
-  console.log(Products);
+
+
+
   return Products.map((product, index) => {
+    const animationRef = useRef();
+    const isInView = useInView(animationRef, { once: true });
+    
     return (
-      <div
+      <motion.div
         key={index}
         className='border bg-[#0a1622] w-full phone:p-4 laptop:p-12 laptop:pb-5 rounded-3xl border-bgSecondary'
+        ref={animationRef}
+        style={{
+          opacity: isInView ? 1 : 0,
+          transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+        }}
       >
         <h2 className='text-center text-[#5792fb] phone:text-[18px] laptop:text-[24px] computer:text-[28px] font-bold phone:mb-2 laptop:mb-5'>
           {product.title}
@@ -52,7 +64,7 @@ const ProductsList = () => {
             );
           })}
         </Swiper>
-      </div>
+      </motion.div>
     );
   });
 };
