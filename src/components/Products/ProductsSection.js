@@ -3,6 +3,7 @@
 import { Element } from 'react-scroll';
 
 import ProductsList from './ProductsList';
+import Products from './products';
 
 const ProductsSection = () => {
   return (
@@ -12,7 +13,9 @@ const ProductsSection = () => {
         id='products'
         className='flex flex-col gap-20 items-center'
       >
-        <ProductsList />
+        {
+          Products.map((product, index) => <ProductsList product={product} key={index} />)
+        }
       </Element>
     </section>
   );
