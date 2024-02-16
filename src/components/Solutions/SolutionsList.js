@@ -11,11 +11,11 @@ const SolutionsList = () => {
   return (
     <div className='p-2 w-full bg-gradient-to-r from-bgSecondary via-primary  to-bgSecondary mt-8 rounded-2xl'>
       <div className='bg-[#0a1622] rounded-lg p-4 flex flex-col gap-6 w-full'>
-        <div className='flex gap-6'>
+        <div className='flex phone:flex-col tablet:flex-row gap-6'>
           <SolutionItem solution={item1} />
           <SolutionItem solution={item2} />
         </div>
-        <div className='flex gap-6'>
+        <div className='flex phone:flex-col tablet:flex-row gap-6'>
           <SolutionItem solution={item3} />
           <SolutionItem solution={item4} />
         </div>
