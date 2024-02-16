@@ -33,16 +33,15 @@
   );
 }
 
-.service {
+.domain {
   cursor: pointer;
   border-radius: 10px;
-  margin: 0px auto 24px auto;
   transition: all 0.5s;
   position: relative;
   overflow: hidden;
 }
 
-.service:before {
+.domain:before {
   border-radius: inherit;
   display: block;
   width: 200%;
@@ -57,10 +56,10 @@
   z-index: 0;
 }
 
-.service:hover:before {
+.domain:hover:before {
   transform: translate(-25%, -25%) rotate(-180deg);
 }
 
-.service:hover {
+.domain:hover {
   box-shadow: 0 0 35px rgba(56, 112, 175, 0.3);
 }

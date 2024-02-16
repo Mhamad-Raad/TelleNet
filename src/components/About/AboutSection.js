@@ -6,18 +6,16 @@ import dynamic from 'next/dynamic';
 import LineSeperator from '.././UI/LineSeperator';
 const DynamicGlobe = dynamic(() => import('../UI/Globe'), {
   ssr: false,
-  loading: () => <p>loading...</p>
+  loading: () => <p>loading...</p>,
 });
 
 import './AboutSection.css';
 import { Element } from 'react-scroll';
 
-
-
 const AboutSection = () => {
   const [showText, setShowText] = useState(false);
-  const textRef = useRef(null);
-  const textIsInView = useInView(textRef, { once: true });
+  const globeRef = useRef(null);
+  const globeIsInView = useInView(globeRef, { once: true });
   const pRef = useRef(null);
   const pIsInView = useInView(pRef, { once: true });
 
@@ -36,24 +34,12 @@ const AboutSection = () => {
           Get to Know Us
         </h2>
         <LineSeperator />
-        <p
-          className='text-center my-10 phone:px-5 tablet:px-10 text-[18px]'
-          style={{
-            transform: textIsInView ? 'none' : 'translateX(-200px)',
-            opacity: textIsInView ? 1 : 0,
-            transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
-          }}
-          ref={textRef}
-        >
-          NetSpot provides cutting-edge technology solutions tailored to your
-          business needs, From cybersecurity to software development, trust our
-          experts to enhance your digital world.
-        </p>
         <motion.div
-          className='hover:cursor-grab focus:cursor-grabbing'
+          ref={globeRef}
+          className='hover:cursor-grab focus:cursor-grabbing mt-2'
           style={{
-            transform: textIsInView ? 'none' : 'translateY(-200px)',
-            opacity: textIsInView ? 1 : 0,
+            transform: globeIsInView ? 'none' : 'translateY(200px)',
+            opacity: globeIsInView ? 1 : 0,
             transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
           }}
         >
@@ -73,16 +59,18 @@ const AboutSection = () => {
           }}
         >
           <span className='font-bold'>
-            TelleNet <sub>Pro</sub>
+            TeleNet <sub>Pro</sub>
           </span>{' '}
-          is guided by four principles: customer obsession rather than
-          competitor focus, passion for invention, commitment to operational
-          excellence, and long-term thinking. We are driven by the excitement of
-          building technologies, inventing products, and providing services that
-          change lives. We embrace new ways of doing things, make decisions
-          quickly, and are not afraid to fail. We have the scope and
-          capabilities of a large company, and the spirit and heart of a small
-          one.
+         {` At TeleNetpro, our mission is to empower businesses with advanced
+          connectivity solutions designed to thrive in today's ever-changing
+          digital realm. With a focus on future-proof networks, we specialize in
+          delivering personalized connectivity solutions tailored to meet the
+          specific needs of every industry. Whether you're a service provider,
+          mobile operator, financial institution, or research network, our
+          solutions are meticulously crafted to optimize your connectivity
+          infrastructure for success in your sector. Explore the potential of
+          next-generation connectivity solutions customized to elevate your
+          business efficiency, foster innovation, and drive growth`}.
         </motion.p>
         <div
           className='mt-8 rounded-md bg-gradient-to-r from-bgSecondary via-primary to-bgSecondary py-[4px] px-[3px] btn-bg min-[1065px]:hidden'
