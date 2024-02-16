@@ -39,12 +39,12 @@ const Header = () => {
       >
         <div className='flex items-center gap-3'>
           <Image
-            alt='TelleNet Logo'
+            alt='TeleNet Logo'
             src={Logo}
             className='rounded-full laptop:ml-2 laptop:w-[50px] phone:w-[40px]'
           />
           <h1 className='font-black tracking-wider laptop:inline laptop:mx-0 laptop:text-xl phone:mx-auto phone:text-lg'>
-            TelleNet <sub>Pro</sub>
+            TeleNet <sub>Pro</sub>
           </h1>
         </div>
         <ul className='font-bold laptop:flex laptop:items-center laptop:text-lg laptop:gap-12 phone:hidden tracking-[2px]'>
@@ -63,7 +63,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              to='services'
+              to='domains'
               spy={true}
               activeClass='text-[#5792fb]'
               ignoreCancelEvents={true}
@@ -71,7 +71,7 @@ const Header = () => {
               duration={1200}
               offset={-110}
             >
-              Services
+              Domains
             </Link>
           </li>
           <li>
