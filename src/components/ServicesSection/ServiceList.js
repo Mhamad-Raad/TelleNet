@@ -18,15 +18,15 @@ const ServiceList = () => {
             opacity: isInView ? 1 : 0,
             transform: isInView ? 'none' : 'translateY(100px)',
             transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s',
-            transitionDelay: `${index * 0.2}s`
+            transitionDelay: `${index * 0.2}s`,
           }}
+          key={index}
         >
           <ServiceItem
             service={service}
-            key={index}
             isInView={isInView}
             delay={index * 0.3}
-            />
+          />
         </motion.div>
       ))}
     </div>
