@@ -62,9 +62,6 @@ const ContactForm = ({ inView }) => {
 
   const formSubmissionHandler = (e) => {
     e.preventDefault();
-    console.log(process.env.NEXT_PUBLIC_SERVICE_ID);
-    console.log(process.env.NEXT_PUBLIC_TEMPLATE_ID);
-    console.log(process.env.NEXT_PUBLIC_USER_ID);
 
     if (form.current === null) return;
 
