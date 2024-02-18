@@ -9,9 +9,9 @@ const ServicesSection = () => {
 
 
   return (
-    <section className='flex flex-col items-center px-12'>
-      <Element name='service' id='service'>
-        <h2 className='text-[32px] mb-2'>Our Services</h2>
+    <section>
+      <Element name='service' id='service' className='flex flex-col items-center phone:px-3 laptop:px-12 '>
+        <h2 className='text-[32px] mb-2 text-center'>Our Services</h2>
         <LineSeperator />
         <ServiceList />
       </Element>
