@@ -89,7 +89,7 @@ const Header = () => {
           </li>
           <li className='text-[17px]'>
             <Link
-              to='solution'
+              to='solutions'
               ignoreCancelEvents={true}
               smooth={true}
               duration={1200}
@@ -102,7 +102,7 @@ const Header = () => {
           </li>
           <li className='text-[17px]'>
             <Link
-              to='service'
+              to='services'
               ignoreCancelEvents={true}
               smooth={true}
               duration={1200}
@@ -210,7 +210,7 @@ const Header = () => {
             </li>
             <li className='flex text-[30px] text-center hover:bg-primary ease-out duration-200'>
               <Link
-                to='solution'
+                to='solutions'
                 ignoreCancelEvents={true}
                 smooth={true}
                 duration={1200}
@@ -224,7 +224,7 @@ const Header = () => {
             </li>
             <li className='flex text-[30px] text-center hover:bg-primary ease-out duration-200'>
               <Link
-                to='service'
+                to='services'
                 ignoreCancelEvents={true}
                 smooth={true}
                 duration={1200}

@@ -20,7 +20,7 @@ const ProductsItem = ({ ImageSrc, Title, Description }) => {
   return (
     <div className='p-1 rounded-md bg-gradient-to-br from-bgSecondary from-30% via-primary via-50% to-bgSecondary to-75% overflow-hidden laptop:h-[400px] mb-12'>
       <motion.div
-        className='rounded-md flex phone:flex-col laptop:flex-row items-center justify-between phone:p-4 tablet:p-10 laptop:p-20 laptop:pt-10 computer:pt-20 computer:pt-12 phone:gap-8 transition-all duration-300'
+        className='rounded-md flex phone:flex-col laptop:flex-row items-center justify-between phone:p-4 tablet:p-10 laptop:p-20 laptop:pt-10 computer:p-20 computer:pt-12 phone:gap-8 transition-all duration-300'
         variants={containerVariants}
         initial='hidden'
         animate='visible'
