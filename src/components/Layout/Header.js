@@ -35,7 +35,7 @@ const Header = () => {
   return (
     <header className='w-full phone:h-[100px] bg-gradient-to-r from-bgColor via-bgSecondary to-bgColor border-b'>
       <nav
-        className={`${backgroundColor} w-full fixed z-10 flex ease-out duration-100 phone:justify-between laptop:items-center laptop:py-6 laptop:px-10 phone:py-6 phone:px-3`}
+        className={`${backgroundColor} w-full fixed z-10 flex ease-out duration-100 phone:justify-between laptop:items-center phone:py-6 phone:px-3`}
       >
         <div className='flex items-center gap-3'>
           <Image
@@ -47,8 +47,8 @@ const Header = () => {
             TeleNet <sub>Pro</sub>
           </h1>
         </div>
-        <ul className='font-bold laptop:flex laptop:items-center laptop:text-lg laptop:gap-12 phone:hidden tracking-[2px]'>
-          <li>
+        <ul className='font-bold laptop:flex laptop:items-center laptop:text-lg laptop:gap-9 phone:hidden tracking-[2px]'>
+          <li className='text-[16px]'>
             <Link
               to='about'
               spy={true}
@@ -61,7 +61,7 @@ const Header = () => {
               About
             </Link>
           </li>
-          <li>
+          <li className='text-[17px]'>
             <Link
               to='domains'
               spy={true}
@@ -74,7 +74,7 @@ const Header = () => {
               Domains
             </Link>
           </li>
-          <li>
+          <li className='text-[17px]'>
             <Link
               to='products'
               ignoreCancelEvents={true}
@@ -87,7 +87,33 @@ const Header = () => {
               Products
             </Link>
           </li>
-          <li>
+          <li className='text-[17px]'>
+            <Link
+              to='solution'
+              ignoreCancelEvents={true}
+              smooth={true}
+              duration={1200}
+              spy={true}
+              activeClass='text-[#5792fb]'
+              offset={-110}
+            >
+              Solutions
+            </Link>
+          </li>
+          <li className='text-[17px]'>
+            <Link
+              to='service'
+              ignoreCancelEvents={true}
+              smooth={true}
+              duration={1200}
+              spy={true}
+              activeClass='text-[#5792fb]'
+              offset={-110}
+            >
+              Services
+            </Link>
+          </li>
+          <li className='text-[17px]'>
             <Link
               className='animated-button1'
               to='contact'
@@ -180,6 +206,34 @@ const Header = () => {
                 onClick={toggleNavbar}
               >
                 Products
+              </Link>
+            </li>
+            <li className='flex text-[30px] text-center hover:bg-primary ease-out duration-200'>
+              <Link
+                to='solution'
+                ignoreCancelEvents={true}
+                smooth={true}
+                duration={1200}
+                spy={true}
+                className='w-full py-5'
+                activeClass='bg-[#5792fb]'
+                offset={-110}
+              >
+                Solutions
+              </Link>
+            </li>
+            <li className='flex text-[30px] text-center hover:bg-primary ease-out duration-200'>
+              <Link
+                to='service'
+                ignoreCancelEvents={true}
+                smooth={true}
+                duration={1200}
+                spy={true}
+                className='w-full py-5'
+                activeClass='bg-[#5792fb]'
+                offset={-110}
+              >
+                Services
               </Link>
             </li>
             <li className='w-full text-[30px] py-5 text-center hover:bg-primary ease-out duration-200 button-63'>
