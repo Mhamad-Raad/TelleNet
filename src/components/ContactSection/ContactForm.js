@@ -62,6 +62,9 @@ const ContactForm = ({ inView }) => {
 
   const formSubmissionHandler = (e) => {
     e.preventDefault();
+    console.log(process.env.NEXT_PUBLIC_SERVICE_ID);
+    console.log(process.env.NEXT_PUBLIC_TEMPLATE_ID);
+    console.log(process.env.NEXT_PUBLIC_USER_ID);
 
     if (form.current === null) return;
 
@@ -70,8 +73,6 @@ const ContactForm = ({ inView }) => {
     const text = form.current.user_message.value;
 
     if (text.length === 0 || email.length === 0 || name.length === 0) {
-      setShowModal(true);
-
       validateEmail();
       validateName();
       validateText();
@@ -81,24 +82,21 @@ const ContactForm = ({ inView }) => {
 
     setLoading(true);
 
-    emailjs
-      .sendForm(
-        'service_qz4ugws',
-        'template_mi83gfy',
-        form.current,
-        'user_HuKpwTBqfsVm40phvlXmn'
-      )
-      .then(
-        (_) => {
-          form.current?.reset();
-          setSubmitted(true);
-          setLoading(false);
-        },
-        (error) => {
-          setLoading(false);
-          setSubmitError(true);
-        }
-      );
+    const SERVICE_ID = process.env.NEXT_PUBLIC_SERVICE_ID;
+    const TEMPLATE_ID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+    const USER_ID = process.env.NEXT_PUBLIC_USER_ID;
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_ID).then(
+      (_) => {
+        form.current?.reset();
+        setSubmitted(true);
+        setLoading(false);
+      },
+      (error) => {
+        setLoading(false);
+        setSubmitError(true);
+      }
+    );
   };
 
   const error = !validEmail || !validName || !validText;
