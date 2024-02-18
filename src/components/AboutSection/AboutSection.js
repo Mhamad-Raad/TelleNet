@@ -58,10 +58,11 @@ const AboutSection = () => {
             opacity: pIsInView ? 1 : 0,
           }}
         >
+          {`At `}
           <span className='font-bold'>
             TeleNet <sub>Pro</sub>
           </span>{' '}
-          {` At TeleNetpro, our mission is to empower businesses with advanced
+          {`, our mission is to empower businesses with advanced
           connectivity solutions designed to thrive in today's ever-changing
           digital realm. With a focus on future-proof networks, we specialize in
           delivering personalized connectivity solutions tailored to meet the
@@ -74,7 +75,7 @@ const AboutSection = () => {
           .
         </motion.p>
         <div
-          className='mt-8 rounded-md bg-gradient-to-r from-bgSecondary via-primary to-bgSecondary py-[4px] px-[3px] btn-bg min-[1065px]:hidden'
+          className='mt-8 rounded-md bg-gradient-to-r from-bgSecondary via-primary to-bgSecondary py-[4px] px-[3px] btn-bg min-[1406px]:hidden'
           style={{
             transform: pIsInView ? 'none' : 'translateY(100px)',
             opacity: pIsInView ? 1 : 0,
