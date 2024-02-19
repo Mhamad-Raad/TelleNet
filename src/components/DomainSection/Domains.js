@@ -2,11 +2,13 @@ import Layer from '@/assets/layer.png';
 import EducationIamage from '@/assets/Education.png';
 import AssetAllocationImage from '@/assets/AssetAllocation.png';
 import BuildingEnterprise from '@/assets/BuildingEnterprise.png';
+import ServiceProvider from '@/assets/ServiceProvider.png';
+import SolarPanel from '@/assets/SolarPanel.png';
 
 const Domains = [
   {
     title: 'Service Provioders',
-    img: Layer,
+    img: ServiceProvider,
     sections: [
       {
         Icon: Layer,
@@ -57,7 +59,7 @@ const Domains = [
     img: Layer,
     sections: [
       {
-        Icon: Layer,
+        Icon: SolarPanel,
         title: 'Power Grid, Water, Oil, Gas & Solars',
       },
       {
