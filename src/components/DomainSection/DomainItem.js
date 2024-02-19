@@ -34,7 +34,7 @@ const DomainItem = ({ Domain, animation }) => {
 
   return (
     <motion.div
-      className='phone:max-w-[275px] phone:w-full phone:h-[400px] laptop:max-w-[240px] computer:max-w-[325px] computer:h-[450px] p-1 rounded-md domain'
+      className='phone:max-w-[275px] phone:w-full phone:h-[450px] laptop:max-w-[240px] computer:max-w-[325px] computer:h-[450px] p-1 rounded-md domain'
       ref={animationRef}
       style={{
         transform: isInView ? 'none' : style,

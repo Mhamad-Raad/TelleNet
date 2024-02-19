@@ -1,4 +1,7 @@
 import Layer from '@/assets/layer.png';
+import EducationIamage from '@/assets/Education.png';
+import AssetAllocationImage from '@/assets/AssetAllocation.png';
+import BuildingEnterprise from '@/assets/BuildingEnterprise.png';
 
 const Domains = [
   {
@@ -17,14 +20,22 @@ const Domains = [
         Icon: Layer,
         title: '⁠Cable Operators MSOs',
       },
+      {
+        Icon: Layer,
+        title: 'Network service providers NSPs',
+      },
+      {
+        Icon: Layer,
+        title: 'Network access point providers NAPs',
+      },
     ],
   },
   {
     title: 'Enterprises',
-    img: Layer,
+    img: BuildingEnterprise,
     sections: [
       {
-        Icon: Layer,
+        Icon: EducationIamage,
         title: 'Research & Education Networks',
       },
       {
@@ -32,7 +43,7 @@ const Domains = [
         title: 'Healthcare',
       },
       {
-        Icon: Layer,
+        Icon: AssetAllocationImage,
         title: 'Financials',
       },
       {

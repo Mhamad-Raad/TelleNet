@@ -1,4 +1,5 @@
 import Layer from '@/assets/layer.png';
+import Aggregation from '@/assets/Aggregation.png';
 
 const Products = [
   {
@@ -23,7 +24,7 @@ const Products = [
         title: 'Aggregation Router',
         description:
           'For high-scale aggregation needs, our best-in-class Aggregation Routers offer carrier-class reliability with terabit-scale connectivity, making them ideal for service providers, MSOs, enterprises, and mission-critical networks. Their modular architecture enables efficient growth alongside service expansion, while redundancy ensures uninterrupted service delivery.',
-        image: Layer,
+        image: Aggregation,
       },
       {
         title: 'Metro Router',
@@ -140,6 +141,12 @@ Gen6+ is a cutting-edge coherent DSP innovation poised to transform fiber networ
         title: 'Gen5: Versatile Metro and Data Center Solution',
         description:
           'Gen5 utilizes cutting-edge 3-nm-based CMOS technology and advanced multi-vendor interoperability, including open probabilistic constellation shaping. Scheduled for QSFP-DD800 and OSFP form factors, it offers high capacity and flexible bit rates for metro and data center interconnect. Integrated intelligence ensures seamless deployment, performance, and network resiliency, reducing optical transport costs.',
+        image: Layer,
+      },
+      {
+        title: 'Gen4++: Intelligent Bandwidth Allocation',
+        description:
+          'Gen4++ distinguishes itself with its flexible bandwidth range (from 25 Gb/s to 400 Gb/s), seamless integration options, and versatile applications like metro aggregation, data center interconnect, and mobile/5G xHaul, ensuring substantial cost savings and operational ease.',
         image: Layer,
       },
       {
