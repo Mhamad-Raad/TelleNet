@@ -4,6 +4,9 @@ import AssetAllocationImage from '@/assets/AssetAllocation.png';
 import BuildingEnterprise from '@/assets/BuildingEnterprise.png';
 import ServiceProvider from '@/assets/ServiceProvider.png';
 import SolarPanel from '@/assets/SolarPanel.png';
+import MobileOperatorTower from '@/assets/MobileOperatorTower.png';
+import Connection from '@/assets/Connection.png';
+import NSPNAP from '@/assets/NSPNAP.png';
 
 const Domains = [
   {
@@ -11,11 +14,11 @@ const Domains = [
     img: ServiceProvider,
     sections: [
       {
-        Icon: Layer,
+        Icon: MobileOperatorTower,
         title: 'Mobile Operators',
       },
       {
-        Icon: Layer,
+        Icon: Connection,
         title: 'Broadband ISPs',
       },
       {
@@ -27,7 +30,7 @@ const Domains = [
         title: 'Network service providers NSPs',
       },
       {
-        Icon: Layer,
+        Icon: NSPNAP,
         title: 'Network access point providers NAPs',
       },
     ],
