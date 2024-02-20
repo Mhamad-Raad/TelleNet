@@ -1,4 +1,3 @@
-import Layer from '@/assets/layer.png';
 import EducationIamage from '@/assets/Education.png';
 import AssetAllocationImage from '@/assets/AssetAllocation.png';
 import BuildingEnterprise from '@/assets/BuildingEnterprise.png';
@@ -7,6 +6,17 @@ import SolarPanel from '@/assets/SolarPanel.png';
 import MobileOperatorTower from '@/assets/MobileOperatorTower.png';
 import Connection from '@/assets/Connection.png';
 import NSPNAP from '@/assets/NSPNAP.png';
+import OpticFiber from '@/assets/OpticFiber.png';
+import HealthCare from '@/assets/HealthCare.png';
+import DataCener from '@/assets/DataCenter.png';
+import UtilityDomain from '@/assets/UtilityDomain.png';
+import PowerLine from '@/assets/PowerLine.png';
+import OilGas from '@/assets/OilGas.png';
+import Water from '@/assets/Water.png';
+import Security from '@/assets/Security.png';
+import Defence from '@/assets/Defence.png';
+import Infrastructure from '@/assets/Infrastructure.png';
+import PInfra from '@/assets/PInfra.png';
 
 const Domains = [
   {
@@ -22,11 +32,11 @@ const Domains = [
         title: 'Broadband ISPs',
       },
       {
-        Icon: Layer,
+        Icon: OpticFiber,
         title: '⁠Cable Operators MSOs',
       },
       {
-        Icon: Layer,
+        Icon: NSPNAP,
         title: 'Network service providers NSPs',
       },
       {
@@ -44,7 +54,7 @@ const Domains = [
         title: 'Research & Education Networks',
       },
       {
-        Icon: Layer,
+        Icon: HealthCare,
         title: 'Healthcare',
       },
       {
@@ -52,29 +62,50 @@ const Domains = [
         title: 'Financials',
       },
       {
-        Icon: Layer,
+        Icon: DataCener,
         title: 'Data Center Xs',
       },
     ],
   },
   {
     title: 'Utilities UTelcos',
-    img: Layer,
+    img: UtilityDomain,
     sections: [
       {
-        Icon: SolarPanel,
-        title: 'Power Grid, Water, Oil, Gas & Solars',
+        Icon: PowerLine,
+        title: 'Power Grid',
       },
       {
-        Icon: Layer,
+        Icon: Water,
+        title: 'Water',
+      },
+      {
+        Icon: OilGas,
+        title: 'Oil, Gas',
+      },
+      {
+        Icon: SolarPanel,
+        title: 'Solars',
+      },
+      {
+        Icon: Security,
         title: 'X/Private Industries',
       },
     ],
   },
   {
     title: 'Critical Infrastructure',
-    img: Layer,
-    sections: [],
+    img: Infrastructure,
+    sections: [
+      {
+        Icon: Defence,
+        title: 'Defence & Military',
+      },
+      {
+        Icon: PInfra,
+        title: 'Public Infrastructure',
+      },
+    ],
   },
 ];
 

@@ -34,7 +34,7 @@ const DomainItem = ({ Domain, animation }) => {
 
   return (
     <motion.div
-      className='phone:max-w-[275px] phone:w-full phone:h-[450px] laptop:max-w-[240px] computer:max-w-[325px] computer:h-[450px] p-1 rounded-md domain'
+      className='phone:max-w-[275px] phone:w-full phone:h-[475px] laptop:max-w-[240px] computer:max-w-[325px] computer:h-[525px] p-1 rounded-md domain'
       ref={animationRef}
       style={{
         transform: isInView ? 'none' : style,
@@ -43,7 +43,7 @@ const DomainItem = ({ Domain, animation }) => {
       }}
     >
       <div
-        className='w-full h-full px-3 py-7 flex flex-col items-center gap-2 rounded-md shiny hover:cursor-none content'
+        className='w-full h-full px-4 py-7 computer:p-12 flex flex-col items-center gap-2 rounded-md shiny hover:cursor-none content'
         ref={containerRef}
       >
         <Image
@@ -54,13 +54,13 @@ const DomainItem = ({ Domain, animation }) => {
         <h3 className='phone:text-[18px] laptop:text-[20px] computer:text-[22px] phone:mt-4 laptop:mt-2 font-black text-[#4d7ca8] text-center'>
           {Domain.title}
         </h3>
-        <div className='phone:text-[16px] text-[#698097] phone:leading-[20px] computer:leading-[24px] mt-2 flex flex-col align-center justify-center gap-1'>
+        <div className='phone:text-[16px] text-[#698097] phone:leading-[20px] computer:leading-[24px] mt-3 flex flex-col align-center justify-center gap-2 w-full'>
           {Domain.sections.map((section, i) => (
             <div className='flex align-center justify-start gap-5' key={i}>
               <Image
                 src={section.Icon}
                 alt=''
-                className='w-[20px] h-[20px] my-auto'
+                className='w-[22px] h-[22px] my-auto'
               />
               <div>
                 <p className='flex items-center'>{section.title}</p>
