@@ -1,5 +1,5 @@
 import Layer from '@/assets/layer.png';
-import Aggregation from '@/assets/Aggregation.png';
+import Aggregation from '@/assets/Product/Aggregation.png';
 
 const Products = [
   {
