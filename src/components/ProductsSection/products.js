@@ -4,6 +4,9 @@ import CPE from '@/assets/Product/CPEr.png';
 import AccessRouter from '@/assets/Product/AccessRouter.png';
 import MetroRouter from '@/assets/Product/MetroRouter.png';
 import DataCenterSwitch from '@/assets/Product/DataCenterSwitch.png';
+import Series1 from '@/assets/Product/Series1.png';
+import Series2 from '@/assets/Product/Series2.png';
+import Series3 from '@/assets/Product/Series3.png';
 
 const Products = [
   {
@@ -49,25 +52,24 @@ const Products = [
     title: 'Optical Networking',
     description:
       'Our Open Optical Networking solutions meet escalating bandwidth demands, offering operators customizable, future-proof options. These networks optimize channel capacity with high-performance optical links and cost-power efficient configurations. Using scalable, pay-as-you-grow pluggable interfaces ensures flexible network expansion. With SDN-controlled ROADMs and OTN switches, link and service routing from access to core is dynamic, streamlining network management. Our solutions cater to diverse requirements, ensuring adaptability and efficiency in optical networking.',
-    image: Layer,
     types: [
       {
         title: 'Series 1',
         description:
           'targets large communication service providers and webscale operators with ultra-high density and ultra-low power consumption, exemplified by our initial platform offering up to 1.2T wavelengths',
-        image: Layer,
+        image: Series1,
       },
       {
         title: 'Series 2',
         description:
           'allows customization with a rich set of line cards for transponders, muxponders, ROADMs, and amplifiers, ensuring tailored solutions without engineering restrictions.',
-        image: Layer,
+        image: Series2,
       },
       {
         title: 'Series 3',
         description:
           'Core OTN Switching: scalable platforms (400G to 16T) for cost-effective switching. Open Optical Networking enhances OTN/DWDM Transport Solutions, reducing costs and improving availability.',
-        image: Layer,
+        image: Series3,
       },
     ],
   },
@@ -75,14 +77,12 @@ const Products = [
     title: 'Domain orchestration',
     description:
       "Our Domain Orchestration suite maximizes network operation efficiency. Its modular applications enable swift service deployment, ensuring optimized and available networks. Powered by a carrier-grade PaaS, our solution provides real-time control over programmable network infrastructure, automating service and network operations. Users access only necessary applications, ensuring an efficient user experience. With Domain Orchestration, unlock your network's potential, enhancing operational agility and responsiveness while streamlining processes and reducing manual intervention.",
-    image: Layer,
     types: [],
   },
   {
     title: 'FTTX OLT/ONT',
     description:
       'Our Fiber-to-the-X (FTTX) solutions drive the Gigabit Society, enhancing broadband connectivity to revitalize communities and foster economic growth. Meeting the soaring demand for reliable high-speed broadband, our solutions empower communication service providers to deliver gigabit services to residential, business, and community users. Tailored for various network operator segments, our operator-specific 10G fiber platforms offer flexibility and agility. With modern, open, and disaggregated solutions, providers can expedite new customer applications, reduce overhead costs, and minimize time-to-market delays.',
-    image: Layer,
     types: [
       {
         title: 'Series 1 OLT',
@@ -120,7 +120,6 @@ const Products = [
     title: 'Pluggable and transceivers',
     description: `COMING SOON Gen6+: Revolutionizing Coherent Optical Solutions
 Gen6+ is a cutting-edge coherent DSP innovation poised to transform fiber networks with unparalleled capacity. Supporting 1.6Tb/s single-carrier wavelengths for metro ROADM networks and 800Gb/s across extensive links, it offers a remarkable 15% improvement in spectral efficiency. Beyond technical prowess, Gen6+ boasts a substantial 50% reduction in space and power per bit compared to existing technology. As the first 200GBaud coherent optical solution, Gen6+ sets a new standard for efficiency and performance in coherent pluggable and transceiver components.`,
-    image: Layer,
     types: [
       {
         title: 'COMING SOON Gen6+: Revolutionizing Coherent Optical Solutions',
