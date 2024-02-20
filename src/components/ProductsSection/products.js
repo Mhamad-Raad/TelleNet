@@ -1,5 +1,9 @@
 import Layer from '@/assets/layer.png';
 import Aggregation from '@/assets/Product/Aggregation.png';
+import CPE from '@/assets/Product/CPEr.png';
+import AccessRouter from '@/assets/Product/AccessRouter.png';
+import MetroRouter from '@/assets/Product/MetroRouter.png';
+import DataCenterSwitch from '@/assets/Product/DataCenterSwitch.png';
 
 const Products = [
   {
@@ -11,14 +15,14 @@ const Products = [
         title: 'Compact CPE customer premises equipment',
         description:
           'designed for applications like 4G and 5G Fronthaul, Critical Infrastructure, and Enterprise use, these devices offer hardened high-availability for mission-critical sectors while providing cost-effective solutions for multiservice edge needs.',
-        image: Layer,
+        image: CPE,
       },
 
       {
         title: 'Access Router',
         description:
           'optimized for 5G xHaul, converged interconnect networks (CIN), broadband backhaul, and mission-critical applications, they excel in converging access edge networks by supporting multiple technologies including Ethernet, TDM (CES), and XGSPON. Available in both integrated and modular configurations, these routers ensure seamless connectivity with full redundancy options.',
-        image: Layer,
+        image: AccessRouter,
       },
       {
         title: 'Aggregation Router',
@@ -30,13 +34,13 @@ const Products = [
         title: 'Metro Router',
         description:
           'leverage cutting-edge switching silicon to deliver high performance and capacity, perfectly suited for supporting 5GxHaul, residential broadband backhaul, and CIN networks. With interfaces supporting up to 400G, these routers provide the necessary horsepower for demanding network environments.',
-        image: Layer,
+        image: MetroRouter,
       },
       {
         title: 'Datacenter Switches',
         description:
           'Datacenter Switches extend our IP router portfolio to cater to data center environments, offering a highly energy-efficient solution based on a commercial SONiC distribution. Equipped with features such as Layer 3 functionality, BGP EVPN-VXLAN support, and high-capacity interfaces, they provide a scalable and flexible solution for modern data center architectures.',
-        image: Layer,
+        image: DataCenterSwitch,
       },
     ],
   },
