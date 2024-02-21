@@ -24,7 +24,7 @@ const SolutionItem = ({ solution, animation }) => {
         transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
       }}
     >
-      <Image src={solution.image} alt='' className='phone:h-[40%] computer:h-1/2 phone:w-[80%] computer:w-full max-w-[500px]' />
+      <Image src={solution.image} alt='' className='phone:h-[50%] phone:w-[80%] computer:w-full max-w-[500px]' />
       <h3 className='phone:text-[20px] laptop:text-[28px] computer:text-[32px] text-center phone:mt-2 tablet:mt-5'>{solution.title}</h3>
       <p className='phone:text-[16px] tablet:text-[18px] computer:text-[24px] phone:mt-2 tablet:mt-5 text-center'>{solution.description}</p>
     </motion.div>

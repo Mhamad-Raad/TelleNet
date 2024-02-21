@@ -1,4 +1,3 @@
-import Layer from '@/assets/layer.png';
 import Aggregation from '@/assets/Product/Aggregation.png';
 import CPE from '@/assets/Product/CPEr.png';
 import AccessRouter from '@/assets/Product/AccessRouter.png';
@@ -12,6 +11,16 @@ import Type2 from '@/assets/Product/Type2.png';
 import Type3 from '@/assets/Product/Type3.png';
 import S1 from '@/assets/Product/S1.png';
 import S2 from '@/assets/Product/S2.png';
+import Gen6P from '@/assets/Product/Gen6+.png';
+import Gen6 from '@/assets/Product/Gen6.png';
+import Gen5P from '@/assets/Product/Gen5+.png';
+import Gen5 from '@/assets/Product/Gen5.png';
+import Gen4PP from '@/assets/Product/Gen4++.png';
+import Gen4P from '@/assets/Product/Gen4+.png';
+import Gen4 from '@/assets/Product/Gen4.png';
+import Gen3P from '@/assets/Product/Gen3+.png';
+import Gen3 from '@/assets/Product/Gen3.png';
+import Transivers from '@/assets/Product/Transivers.png';
 
 const Products = [
   {
@@ -130,62 +139,62 @@ Gen6+ is a cutting-edge coherent DSP innovation poised to transform fiber networ
         title: 'COMING SOON Gen6+: Revolutionizing Coherent Optical Solutions',
         description:
           'Gen6+ is a leading coherent DSP solution, offering high capacity over fiber networks. Supporting 1.6Tb/s single-carrier wavelengths for metro ROADM networks and 800Gb/s across long links, it improves spectral efficiency by 15% compared to its predecessor. With a 50% reduction in space and power per bit, it sets new standards in efficiency and performance.',
-        image: Layer,
+        image: Gen6P,
       },
       {
         title:
           'Gen6: Driving Efficiency and Innovation in Coherent Pluggable Technology',
         description:
           'Gen6 emerges as a footprint-optimized solution, powering 400G-800G coherent pluggables for enhanced efficiency. It extends to interoperable 800ZR DCI applications, showcasing versatility. With innovative engineering, Gen6 introduces the pioneering 800LR design, integrating coherent technology within data center campuses for the first time, promising a new era of innovation in pluggable components.',
-        image: Layer,
+        image: Gen6,
       },
       {
         title: 'Gen5+: Next-Gen Long-Haul Performance',
         description:
           'Gen5+ is an advanced pluggable solution leveraging cutting-edge CMOS technology, ensuring long-haul performance with low power. It enables seamless 800G transmission over 2,000 km, with features like remote diagnostics and encryption for optimized efficiency and security. Compliant with QSFP-DD800 and OSFP MSAs, it reshapes optical networking.',
-        image: Layer,
+        image: Gen5P,
       },
       {
         title: 'Gen5: Versatile Metro and Data Center Solution',
         description:
           'Gen5 utilizes cutting-edge 3-nm-based CMOS technology and advanced multi-vendor interoperability, including open probabilistic constellation shaping. Scheduled for QSFP-DD800 and OSFP form factors, it offers high capacity and flexible bit rates for metro and data center interconnect. Integrated intelligence ensures seamless deployment, performance, and network resiliency, reducing optical transport costs.',
-        image: Layer,
+        image: Gen5,
       },
       {
         title: 'Gen4++: Intelligent Bandwidth Allocation',
         description:
           'Gen4++ distinguishes itself with its flexible bandwidth range (from 25 Gb/s to 400 Gb/s), seamless integration options, and versatile applications like metro aggregation, data center interconnect, and mobile/5G xHaul, ensuring substantial cost savings and operational ease.',
-        image: Layer,
+        image: Gen4PP,
       },
       {
         title: 'Gen4+: Record-Setting Fiber Transmission',
         description:
           'Gen4+ revolutionizes coherent pluggable solutions for high-performance applications, supporting 400 Gb/s transmission on standard fiber routes. Available in QSFP-DD and CFP2 form factors, it offers adaptability from 100 Gb/s to 400 Gb/s connectivity. With features like dual management options, remote diagnostics, and inflight encryption, Gen4+ promises efficiency gains and enhanced customer experiences, transforming the pluggable landscape.',
-        image: Layer,
+        image: Gen4P,
       },
       {
         title: 'Gen4: Streamlined 400G Transport',
         description:
           'Gen4 optimizes 400G transport for metro and data center interconnect. With dual management options, it ensures reliability and interoperability. Its applications span data center interconnect, metro aggregation, DSL/PON backhaul, cable fiber deep, and mobile/5G xHaul, offering cost-efficient, simplified operations.',
-        image: Layer,
+        image: Gen4,
       },
       {
         title: 'Gen3+: Revolutionizing Edge Connectivity',
         description:
           'Gen3+ offers edge-optimized transmission with software-configurable bandwidth from 25 Gb/s to 100 Gb/s. Achieving 100G transmission in 25 GHz doubles fiber capacity. In QSFP-DD and CFP2 form factors, it ensures compatibility, integrated with dual management options. Gen3+ excels in diagnostics, telemetry, and encryption, supporting applications like metro aggregation, data center interconnect, and backhaul.',
-        image: Layer,
+        image: Gen3P,
       },
       {
         title: 'Gen3: Seamless 100G Integration',
         description:
           'Gen3 revolutionizes pluggable tech for high-performance point-to-point apps. Supporting 100 Gb/s transmission, it integrates seamlessly in QSFP-DD form factor. With integrated intelligence, dual management options, and encryption, it optimizes operations and security. Tunable across the C-band, it complies with QSFP-DD MSA standards, catering to various applications while reducing costs.',
-        image: Layer,
+        image: Gen3,
       },
       {
         title: 'Transceivers',
         description:
           'Telenetpro offers a wide range of transceivers, including Dual/SIngle Fiber (BIDI), CWDM, DWDM, PON, and PHY (SGMII) for various data rates. Operating across different wavelengths and distances, they feature Digital Diagnostic Function and wide temperature support. Compliant with RoHS standards, these transceivers ensure compatibility with equipment from leading vendors, ideal for diverse networks.',
-        image: Layer,
+        image: Transivers,
       },
     ],
   },
