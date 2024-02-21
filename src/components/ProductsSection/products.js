@@ -7,6 +7,11 @@ import DataCenterSwitch from '@/assets/Product/DataCenterSwitch.png';
 import Series1 from '@/assets/Product/Series1.png';
 import Series2 from '@/assets/Product/Series2.png';
 import Series3 from '@/assets/Product/Series3.png';
+import Type1 from '@/assets/Product/Type1.png';
+import Type2 from '@/assets/Product/Type2.png';
+import Type3 from '@/assets/Product/Type3.png';
+import S1 from '@/assets/Product/S1.png';
+import S2 from '@/assets/Product/S2.png';
 
 const Products = [
   {
@@ -88,31 +93,31 @@ const Products = [
         title: 'Series 1 OLT',
         description:
           'open and disaggregated Optical Line Terminals (OLTs), we deliver unprecedented levels of network simplicity, sustainability, and scale to both MSOs and CSPs. These OLTs support a broad range of PON standards, including 10G Combo PON, XGS-PON, GPON, and 10G-EPON, providing operators with the flexibility to address diverse deployment scenarios ranging from rural to dense urban environments.',
-        image: Layer,
+        image: S1,
       },
       {
         title: 'Series 2 OLT',
         description:
           'Series 2 stands as a robust OLT system tailored for regional networks, offering streamlined operations through advanced analytics. With its support for 10G Combo PON, GPON, XGS-PON, and Carrier Ethernet services, it effectively bridges the gap between existing infrastructures and the demands of next-generation networks.',
-        image: Layer,
+        image: S2,
       },
       {
         title: 'Type 1 XGS-PON ONTs',
         description:
           'designed to support the growing smart home ecosystem and small business startups, providing an array of features to meet the demands of bandwidth-intensive applications.',
-        image: Layer,
+        image: Type1,
       },
       {
         title: 'Type 2 XGS-PON ONTs',
         description:
           'leverage high data rates of fiber optic transmission to deliver unmatched flexibility and performance. With support for next-generation 10Gbit/s architectures, these ONTs ensure that service providers can economically meet the needs of multigigabit services well into the future.',
-        image: Layer,
+        image: Type2,
       },
       {
         title: 'Type 3 GPON ONTs',
         description:
           'engineered to support demanding multigigabit residential and business services, cloud services, and remote work scenarios. With their high-performance capabilities, these ONTs set the standard for industry-leading voice, data, and video capabilities, ensuring that service providers can deliver superior connectivity experiences to their subscribers.',
-        image: Layer,
+        image: Type3,
       },
     ],
   },
