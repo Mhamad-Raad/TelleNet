@@ -10,8 +10,6 @@ const ServiceItem = ({ service }) => {
   return (
     <div
       className='bg-[#091420] phone:px-4 tablet:px-8 py-4 flex flex-col items-center rounded-2xl w-full max-h-[54px] overflow-hidden'
-      onMouseOver={() => isHovered(true)}
-      onMouseOut={() => isHovered(false)}
       onClick={() => isHovered(!hovered)}
       transition={{ ease: 'linear', duration: 0.3 }}
       style={{

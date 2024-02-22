@@ -17,7 +17,7 @@ const Footer = () => {
             src={Logo}
             className='rounded-full laptop:ml-2 laptop:w-[65px] phone:w-[50px]'
           />
-          <h3 className='font-black text-[28px]'>TELENET</h3>
+          <h3 className='font-black text-[28px]'>TELENET <sub>Pro</sub></h3>
         </div>
         <div className='flex flex-col gap-y-[3px]'>
           <h3 className='font-black text-[22px] text-white tracking-[1px] mb-[3px]'>
@@ -112,7 +112,7 @@ const Footer = () => {
         <LineSeperator />
       </div>
       <p className='text-center p-10 text-[20px]'>
-        &copy; 2024 TeleNet. All Rights Reserved.
+        &copy; 2024 TeleNet<sub>Pro</sub> All Rights Reserved.
       </p>
     </footer>
   );
