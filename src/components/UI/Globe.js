@@ -66,7 +66,6 @@ const GlobeModule = () => {
       pathPointLat={(p) => p[1]}
       pathPointLng={(p) => p[0]}
       pathColor={(path) => '#84c0df'}
-      pathLabel={(path) => path.properties.name}
       pathDashLength={0.1}
       pathDashGap={0.008}
       pathDashAnimateTime={12000}
