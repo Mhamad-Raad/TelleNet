@@ -22,7 +22,7 @@ const Contact = () => {
       <Element
         name='contact'
         id='contact'
-        className='p-10 flex justify-between items-center gap-20 phone:flex-col laptop:flex-row overflow-hidden'
+        className='phone:p-6 tablet:p-10 flex justify-between items-center gap-20 phone:flex-col laptop:flex-row overflow-hidden'
       >
         <motion.div
           className='phone:w-full laptop:w-1/2'
