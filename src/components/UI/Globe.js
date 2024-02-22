@@ -59,10 +59,6 @@ const GlobeModule = () => {
       hexPolygonMargin={0.3}
       hexPolygonUseDots={true}
       hexPolygonColor={() => '#063868'}
-      hexPolygonLabel={({ properties: d }) => `
-        <b>${d.ADMIN} (${d.ISO_A2})</b> <br />
-        Population: <i>${d.POP_EST}</i>
-      `}
       width={750}
       height={500}
       pathsData={cablePaths}
