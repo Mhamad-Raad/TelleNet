@@ -14,9 +14,9 @@ const Services = [
     image: Layer,
   },
   {
-    title: "Telenetpro's Comprehensive Service Offerings",
+    title: 'Expert Deployment Services',
     description:
-      'At Telenetpro, we recognize that the successful implementation and sustained operation of cutting-edge communication solutions require more than just innovative technology. Our dedicated services teams are poised to guide you through every step of your network transformation journey, ensuring you leverage the maximum value from your solution. From deployment and integration to ongoing maintenance, monitoring, and education, our holistic approach aligns with your business objectives.',
+      `Our deployment services encompass end-to-end support to ensure your network reaches its full potential. Whether you're planning a network expansion project, upgrading hardware and software, or executing program-specific deployments, our team of experts provides seamless project management and logistics support to oversee every aspect of the deployment process.`,
     image: Layer,
   },
   {

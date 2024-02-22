@@ -59,10 +59,6 @@ const GlobeModule = () => {
       hexPolygonMargin={0.3}
       hexPolygonUseDots={true}
       hexPolygonColor={() => '#063868'}
-      hexPolygonLabel={({ properties: d }) => `
-        <b>${d.ADMIN} (${d.ISO_A2})</b> <br />
-        Population: <i>${d.POP_EST}</i>
-      `}
       width={750}
       height={500}
       pathsData={cablePaths}
@@ -70,7 +66,6 @@ const GlobeModule = () => {
       pathPointLat={(p) => p[1]}
       pathPointLng={(p) => p[0]}
       pathColor={(path) => '#84c0df'}
-      pathLabel={(path) => path.properties.name}
       pathDashLength={0.1}
       pathDashGap={0.008}
       pathDashAnimateTime={12000}
