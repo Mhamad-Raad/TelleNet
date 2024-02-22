@@ -36,8 +36,7 @@ const Contact = () => {
             Get in Touch with Us
           </h3>
           <p className='font-bold text-[16px] text-[#697a7e] mb-8'>
-            We Value your feedback, questions, and suggestions. Please Reach out
-            to us if you have any inquiries or concerns we are here to help.
+            Take action today and elevate your business to new heights!
           </p>
           <LineSeperator />
           <div className='flex flex-col gap-4 mt-[50px]'>
