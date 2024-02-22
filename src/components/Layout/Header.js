@@ -180,7 +180,7 @@ const Header = () => {
             </li>
             <li className='flex text-[30px] text-center hover:bg-primary ease-out duration-200'>
               <Link
-                to='services'
+                to='domains'
                 className='w-full py-5'
                 spy={true}
                 activeClass='bg-[#5792fb]'
@@ -190,7 +190,7 @@ const Header = () => {
                 offset={-110}
                 onClick={toggleNavbar}
               >
-                Services
+                Domains
               </Link>
             </li>
             <li className='flex text-[30px] text-center hover:bg-primary ease-out duration-200'>
@@ -218,6 +218,7 @@ const Header = () => {
                 className='w-full py-5'
                 activeClass='bg-[#5792fb]'
                 offset={-110}
+                onClick={toggleNavbar}
               >
                 Solutions
               </Link>
@@ -232,6 +233,7 @@ const Header = () => {
                 className='w-full py-5'
                 activeClass='bg-[#5792fb]'
                 offset={-110}
+                onClick={toggleNavbar}
               >
                 Services
               </Link>
