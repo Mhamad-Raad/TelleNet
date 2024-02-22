@@ -6,7 +6,7 @@ import { useRef } from 'react';
 
 const ServiceList = () => {
   const ref = useRef();
-  const isInView = useInView(ref);
+  const isInView = useInView(ref, {once: true});
   return (
     <div
       className='flex flex-col phone:px-3 laptop:px-12 py-8 bg-[#0d1c2b] gap-4 w-full mt-4'
