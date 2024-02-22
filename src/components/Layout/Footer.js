@@ -17,7 +17,9 @@ const Footer = () => {
             src={Logo}
             className='rounded-full laptop:ml-2 laptop:w-[65px] phone:w-[50px]'
           />
-          <h3 className='font-black text-[28px]'>TELENET <sub>Pro</sub></h3>
+          <h3 className='font-black text-[28px]'>
+            TELENET <sub>Pro</sub>
+          </h3>
         </div>
         <div className='flex flex-col gap-y-[3px]'>
           <h3 className='font-black text-[22px] text-white tracking-[1px] mb-[3px]'>
@@ -95,7 +97,7 @@ const Footer = () => {
           </h3>
           <a
             target='_blank'
-            href='https://www.linkedin.com/in/rabar-marouf-36a30392/'
+            href='https://www.linkedin.com/company/telenetpro/'
             className='text-[#ffffffb2] text-[18px]'
           >
             LinkedIn
