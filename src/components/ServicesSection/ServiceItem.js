@@ -9,7 +9,7 @@ const ServiceItem = ({ service }) => {
 
   return (
     <div
-      className='bg-[#091420] phone:px-4 tablet:px-8 py-4 flex flex-col items-center rounded-2xl w-full max-h-[54px] overflow-hidden hover:cursor-pointer hover:bg-bgSecondary transition-all duration-100 ease-in-out'
+      className='bg-[#091420] phone:px-4 tablet:px-8 py-4 flex flex-col items-center rounded-2xl w-full max-h-[54px] overflow-hidden hover:cursor-pointer hover:bg-[#000c1b] transition-all duration-100 ease-in-out'
       onClick={() => isHovered(!hovered)}
       transition={{ ease: 'linear', duration: 0.3 }}
       style={{
