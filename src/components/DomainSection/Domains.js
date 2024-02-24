@@ -81,7 +81,7 @@ const Domains = [
       },
       {
         Icon: OilGas,
-        title: 'Oil, Gas',
+        title: 'Oil & Gas',
       },
       {
         Icon: SolarPanel,

@@ -15,7 +15,7 @@ const DomainSection = () => {
           How Can We Help
         </h2>
         <LineSeperator />
-        <div className='flex flex-wrap phone:items-center phone:justify-center laptop:justify-between phone:gap-10 laptop:gap-0 mt-14 phone:px-2'>
+        <div className='flex flex-wrap phone:items-center phone:justify-center laptop:justify-between phone:gap-10 laptop:gap-0 mt-14 phone:px-2 computer:px-10'>
           {Domains.map((domain, i) => (
             <DomainItem
               key={i}

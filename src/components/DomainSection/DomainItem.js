@@ -34,7 +34,7 @@ const DomainItem = ({ Domain, animation }) => {
 
   return (
     <motion.div
-      className='phone:max-w-[275px] phone:w-full phone:h-[475px] laptop:max-w-[240px] computer:max-w-[325px] computer:h-[525px] p-1 rounded-md domain'
+      className='phone:max-w-[275px] phone:w-full phone:h-[475px] laptop:max-w-[240px] computer:max-w-[400px] computer:h-[525px] p-1 rounded-md domain'
       ref={animationRef}
       style={{
         transform: isInView ? 'none' : style,
@@ -49,7 +49,7 @@ const DomainItem = ({ Domain, animation }) => {
         <Image
           src={Domain.img}
           className='phone:w-[150px] phone:h-[150px] computer:w-[175px] computer:h-[175px]'
-          alt=''
+          alt={`${Domain.title}'s Image`}
         />
         <h3 className='phone:text-[18px] laptop:text-[20px] computer:text-[22px] phone:mt-4 laptop:mt-2 font-black text-[#4d7ca8] text-center'>
           {Domain.title}
@@ -59,7 +59,7 @@ const DomainItem = ({ Domain, animation }) => {
             <div className='flex align-center justify-start gap-5' key={i}>
               <Image
                 src={section.Icon}
-                alt=''
+                alt={`${section.Icon} Image`}
                 className='w-[22px] h-[22px] my-auto'
               />
               <div>
