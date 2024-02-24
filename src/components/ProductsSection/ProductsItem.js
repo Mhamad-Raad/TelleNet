@@ -47,7 +47,7 @@ const ProductsItem = ({ ImageSrc, Title, Description }) => {
         >
           <Image
             src={ImageSrc}
-            alt=''
+            alt={`${Title}'s Image`}
             className='h-full w-full max-h-[300px]'
           />
         </motion.div>
