@@ -14,7 +14,7 @@ import S2 from '@/assets/Product/S2.png';
 import Gen6P from '@/assets/Product/Gen6+.png';
 import Gen6 from '@/assets/Product/Gen6.png';
 import Gen5P from '@/assets/Product/Gen5+.png';
-import Gen5 from '@/assets/Product/Gen5.png';
+import Gen5 from '@/assets/Product/G5.png';
 import Gen4PP from '@/assets/Product/Gen4++.png';
 import Gen4P from '@/assets/Product/Gen4+.png';
 import Gen4 from '@/assets/Product/Gen4.png';

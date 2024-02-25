@@ -20,7 +20,7 @@ import PInfra from '@/assets/Domain/PInfra.png';
 
 const Domains = [
   {
-    title: 'Service Provioders',
+    title: 'Service Providers',
     img: ServiceProvider,
     sections: [
       {
@@ -29,19 +29,19 @@ const Domains = [
       },
       {
         Icon: Connection,
-        title: 'Broadband ISPs',
+        title: 'Broadband ISP',
       },
       {
         Icon: OpticFiber,
-        title: '⁠Cable Operators MSOs',
+        title: '⁠Cable Operators MSO',
       },
       {
         Icon: NSPNAP,
-        title: 'Network service providers NSPs',
+        title: 'Network service providers NSP',
       },
       {
         Icon: NSPNAP,
-        title: 'Network access point providers NAPs',
+        title: 'Network access point providers NAP',
       },
     ],
   },
@@ -99,7 +99,7 @@ const Domains = [
     sections: [
       {
         Icon: Defence,
-        title: 'Defence & Military',
+        title: 'Defense & Military',
       },
       {
         Icon: PInfra,
