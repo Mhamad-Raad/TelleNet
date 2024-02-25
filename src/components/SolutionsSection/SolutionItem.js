@@ -31,7 +31,7 @@ const SolutionItem = ({ solution, animation }) => {
       <Image
         src={solution.image}
         alt={`${solution.title}'s Image`}
-        className='phone:h-[40%] phone:w-[80%] computer:w-full max-w-[300px] solution-content'
+        className='phone:h-[50%] phone:w-[80%] computer:w-full max-w-[300px] solution-content'
       />
       <h3 className='phone:text-[20px] laptop:text-[24px] computer:text-[28px] text-center phone:mt-2 tablet:mt-5 solution-content'>
         {solution.title}
