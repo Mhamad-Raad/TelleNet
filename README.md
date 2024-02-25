@@ -158,5 +158,3 @@ Our Maintenance Support services offer proactive monitoring to keep your product
 
 Professional Consulting and Education Services
 We provide consulting and education services to help you transform your business, improve processes, and streamline operations. Our team of experts works closely with you to turn your network goals into actionable plans, while our education services ensure that you have the technical knowledge and skills necessary to achieve service readiness and delivery goals, accelerating time-to-market and maximizing the value of your products and solutions.
-
-With a global presence and unmatched core competencies in broadband solutions and services, Telenetpro Communications is your trusted partner for network transformation. Whether you're looking to deploy new technologies, upgrade existing infrastructure, or optimize network performance, our comprehensive range of Professional Services is designed to meet your needs and drive your success.
