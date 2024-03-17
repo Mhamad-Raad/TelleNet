@@ -19,12 +19,17 @@ const DomainItem = ({ Domain, animation }) => {
   }
 
   useEffect(() => {
-    if (containerRef) {
-      containerRef.current.addEventListener('mousemove', mouseMoveEvent);
+    const currentContainerRef = containerRef.current;
+
+    if (currentContainerRef) {
+      currentContainerRef.addEventListener('mousemove', mouseMoveEvent);
     }
 
-    return () =>
-      containerRef.current.removeEventListener('mousemove', mouseMoveEvent);
+    return () => {
+      if (currentContainerRef) {
+        currentContainerRef.removeEventListener('mousemove', mouseMoveEvent);
+      }
+    };
   }, []);
 
   if (animation === 0) style = 'translateX(-100px)';
